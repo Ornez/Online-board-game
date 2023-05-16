@@ -14,15 +14,15 @@ public static class ApplicationServiceExtensions
         services.AddScoped<ITokenService, TokenService>();
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
-        services.AddDbContext<DataContext>(options => 
-        {
-            options.UseMySql(config.GetConnectionString("DefaultConnection"), ServerVersion.AutoDetect(config.GetConnectionString("DefaultConnection")))
-                .UseLoggerFactory(LoggerFactory.Create(b => b
-                    .AddConsole()
-                    .AddFilter(level => level >= LogLevel.Information)))
-                .EnableSensitiveDataLogging()
-                .EnableDetailedErrors();
-        });
+        // services.AddDbContext<DataContext>(options => 
+        // {
+        //     options.UseMySql(config.GetConnectionString("DefaultConnection"), ServerVersion.AutoDetect(config.GetConnectionString("DefaultConnection")))
+        //         .UseLoggerFactory(LoggerFactory.Create(b => b
+        //             .AddConsole()
+        //             .AddFilter(level => level >= LogLevel.Information)))
+        //         .EnableSensitiveDataLogging()
+        //         .EnableDetailedErrors();
+        // });
         services.AddSingleton<ILobbiesRegistry, LobbiesRegistry>();
         services.AddSingleton<IPlayersRegistry, PlayersRegistry>();
         

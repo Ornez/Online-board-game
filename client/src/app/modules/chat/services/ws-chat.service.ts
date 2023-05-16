@@ -19,7 +19,7 @@ export class WsChatService {
 
   public initChatConnection(): Observable<void> {
     this.chatHubConnection = new HubConnectionBuilder()
-      .withUrl('ws-backend/chat', {
+      .withUrl('/chat', {
         accessTokenFactory: () => this.auth.getJwtToken(),
         skipNegotiation: true,
         transport: HttpTransportType.WebSockets

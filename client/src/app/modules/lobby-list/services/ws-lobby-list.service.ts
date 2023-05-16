@@ -19,7 +19,7 @@ export class WsLobbyListService {
 
   public initLobbiesConnection(): Observable<void> {
     this.hubConnection = new HubConnectionBuilder()
-      .withUrl('ws-backend/lobbies', {
+      .withUrl('/lobbies', {
         accessTokenFactory: () => this.auth.getJwtToken(),
         skipNegotiation: true,
         transport: HttpTransportType.WebSockets

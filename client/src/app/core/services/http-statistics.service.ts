@@ -11,7 +11,8 @@ export class HttpStatisticsService {
   constructor(private http: HttpClient) {}
 
   public getStatistics(): Observable<StatisticsData> {
-    const url = 'http-backend/api/user/statistics';
+    //const url = 'http-backend/api/user/statistics';
+    const url = 'api/user/statistics';
     return this.http.get<StatisticsData>(url);
   }
 }

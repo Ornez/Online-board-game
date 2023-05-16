@@ -55,6 +55,16 @@ public class AccountController : BaseApiController
 
         _context.Users.Add(user);
 
+        if (await _context.Language.FirstOrDefaultAsync() == null)
+        {
+            _context.Language.Add(new Language {
+                Id = 1,
+                Name = "english",
+                Code = "en",
+            });
+            await _context.SaveChangesAsync();
+        }
+        
         var settings = new Settings 
         {
             SoundVolume = 5,

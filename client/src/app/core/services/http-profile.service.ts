@@ -11,7 +11,8 @@ export class HttpProfileService {
   constructor(private http: HttpClient) {}
 
   public getProfile(): Observable<ProfileData> {
-    const url = 'http-backend/api/user/profile';
+    //const url = 'http-backend/api/user/profile';
+    const url = 'api/user/profile';
     return this.http.get<ProfileData>(url);
   }
 }

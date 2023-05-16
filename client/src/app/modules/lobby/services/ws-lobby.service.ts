@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {from, Observable, Subject} from "rxjs";
+import {delay, from, Observable, Subject} from "rxjs";
 import {HttpTransportType, HubConnection, HubConnectionBuilder} from "@microsoft/signalr";
 import {WebSocketResponse} from "@lobby-list/models/web-socket-response";
 import {LobbyLeavePayload} from "@lobby/models/lobby-leave-payload";
@@ -21,7 +21,7 @@ export class WsLobbyService {
 
   public initLobbyConnection(): Observable<void> {
     this.lobbyHubConnection = new HubConnectionBuilder()
-      .withUrl('ws-backend/lobby', {
+      .withUrl('/lobby', {
         accessTokenFactory: () => this.auth.getJwtToken(),
         skipNegotiation: true,
         transport: HttpTransportType.WebSockets
@@ -60,7 +60,13 @@ export class WsLobbyService {
   }
 
   public listenToGameStarted(): Observable<boolean> {
-    this.lobbyHubConnection.on('game_started', () => this.gameStarted$.next(true));
+
+    this.lobbyHubConnection.on('game_started', () => {
+      console.log("PRZED DELAYEM");
+      delay(4000);
+      console.log("PO DELAYU");
+      this.gameStarted$.next(true)
+    });
     return this.gameStarted$;
   }
 

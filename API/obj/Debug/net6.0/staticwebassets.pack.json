@@ -1,12 +1,372 @@
 {
   "Files": [
     {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\112.dba481dd0aacdd9a.js",
+      "PackagePath": "staticwebassets\\112.dba481dd0aacdd9a.js"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\3rdpartylicenses.txt",
+      "PackagePath": "staticwebassets\\3rdpartylicenses.txt"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\44.64591111e205e370.js",
+      "PackagePath": "staticwebassets\\44.64591111e205e370.js"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\Gameria.d25d0d5b2f5c6f87.ttf",
+      "PackagePath": "staticwebassets\\Gameria.d25d0d5b2f5c6f87.ttf"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\SigmarOne.9129e8e485bbee00.ttf",
+      "PackagePath": "staticwebassets\\SigmarOne.9129e8e485bbee00.ttf"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\fonts\\Gameria.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Gameria.ttf"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\fonts\\SigmarOne.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\SigmarOne.ttf"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\i18n\\en.json",
+      "PackagePath": "staticwebassets\\assets\\i18n\\en.json"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\i18n\\pl.json",
+      "PackagePath": "staticwebassets\\assets\\i18n\\pl.json"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\arrow-to-bottom-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\arrow-to-bottom-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\chart-line-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\chart-line-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\cog-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\cog-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\comments-alt-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\comments-alt-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\crown-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\crown-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\dice-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\dice-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\hand-holding-medical-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\hand-holding-medical-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\heart-light.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\heart-light.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\heart-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\heart-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\info-square-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\info-square-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\location-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\location-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\lock-open-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\lock-open-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\lock-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\lock-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\redo-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\redo-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\shield-check-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\shield-check-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\shield-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\shield-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\swords-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\swords-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\times-light.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\times-light.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\times-square-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\times-square-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\treasure-chest-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\treasure-chest-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\undo-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\undo-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\user-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\user-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\icons\\walking-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\walking-solid.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\background\\home-background-image.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\background\\home-background-image.jpg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\background\\lobby-background-image.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\background\\lobby-background-image.jpg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\characters\\NECROMANCER.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\characters\\NECROMANCER.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\characters\\NECROMANCER_ICON.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\characters\\NECROMANCER_ICON.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\characters\\PALADIN.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\characters\\PALADIN.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\characters\\PALADIN_ICON.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\characters\\PALADIN_ICON.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\characters\\ROGUE.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\characters\\ROGUE.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\characters\\ROGUE_ICON.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\characters\\ROGUE_ICON.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\characters\\SWORDSMAN.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\characters\\SWORDSMAN.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\characters\\SWORDSMAN_ICON.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\characters\\SWORDSMAN_ICON.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\characters\\WARRIOR.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\characters\\WARRIOR.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\characters\\WARRIOR_ICON.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\characters\\WARRIOR_ICON.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\characters\\WIZARD.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\characters\\WIZARD.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\characters\\WIZARD_ICON.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\characters\\WIZARD_ICON.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\enemies\\DRAGON.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\enemies\\DRAGON.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\enemies\\GHOST.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\enemies\\GHOST.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\enemies\\KEY_KEEPER.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\enemies\\KEY_KEEPER.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\enemies\\MUMMY.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\enemies\\MUMMY.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\enemies\\RAT.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\enemies\\RAT.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\enemies\\SKELETON.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\enemies\\SKELETON.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\enemies\\SPIDER.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\enemies\\SPIDER.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\enemies\\VAMPIRE.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\enemies\\VAMPIRE.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\equipments\\ATTACK_SCROLL.png",
+      "PackagePath": "staticwebassets\\assets\\images\\equipments\\ATTACK_SCROLL.png"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\equipments\\AXE.png",
+      "PackagePath": "staticwebassets\\assets\\images\\equipments\\AXE.png"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\equipments\\CHEST.png",
+      "PackagePath": "staticwebassets\\assets\\images\\equipments\\CHEST.png"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\equipments\\EMPTY_KEY_SLOT.png",
+      "PackagePath": "staticwebassets\\assets\\images\\equipments\\EMPTY_KEY_SLOT.png"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\equipments\\EMPTY_SCROLL_SLOT.png",
+      "PackagePath": "staticwebassets\\assets\\images\\equipments\\EMPTY_SCROLL_SLOT.png"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\equipments\\EMPTY_WEAPON_SLOT.png",
+      "PackagePath": "staticwebassets\\assets\\images\\equipments\\EMPTY_WEAPON_SLOT.png"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\equipments\\HEALING_SCROLL.png",
+      "PackagePath": "staticwebassets\\assets\\images\\equipments\\HEALING_SCROLL.png"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\equipments\\KEY.png",
+      "PackagePath": "staticwebassets\\assets\\images\\equipments\\KEY.png"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\equipments\\SPEAR.png",
+      "PackagePath": "staticwebassets\\assets\\images\\equipments\\SPEAR.png"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\equipments\\SWORD.png",
+      "PackagePath": "staticwebassets\\assets\\images\\equipments\\SWORD.png"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\fields\\CHAMBER_I.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\fields\\CHAMBER_I.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\fields\\CHAMBER_L.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\fields\\CHAMBER_L.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\fields\\CHAMBER_T.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\fields\\CHAMBER_T.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\fields\\CHAMBER_X.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\fields\\CHAMBER_X.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\fields\\CORRIDOR_I.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\fields\\CORRIDOR_I.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\fields\\CORRIDOR_L.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\fields\\CORRIDOR_L.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\fields\\CORRIDOR_T.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\fields\\CORRIDOR_T.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\fields\\CORRIDOR_X.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\fields\\CORRIDOR_X.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\fields\\EMPTY_FIELD.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\fields\\EMPTY_FIELD.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\fields\\HEALING_I.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\fields\\HEALING_I.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\fields\\HEALING_L.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\fields\\HEALING_L.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\fields\\HEALING_T.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\fields\\HEALING_T.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\fields\\HEALING_X.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\fields\\HEALING_X.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\images\\fields\\START.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\fields\\START.webp"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\sounds\\nav-hover.mp3",
+      "PackagePath": "staticwebassets\\assets\\sounds\\nav-hover.mp3"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\color.dae87a04d07ca92b.png",
+      "PackagePath": "staticwebassets\\color.dae87a04d07ca92b.png"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\hue.8b1818380241e6ac.png",
+      "PackagePath": "staticwebassets\\hue.8b1818380241e6ac.png"
+    },
+    {
       "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
-      "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.js"
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\main.8e257122802db4d9.js",
+      "PackagePath": "staticwebassets\\main.8e257122802db4d9.js"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\polyfills.800330198719c5cf.js",
+      "PackagePath": "staticwebassets\\polyfills.800330198719c5cf.js"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\primeicons.0112589c5695a9ed.ttf",
+      "PackagePath": "staticwebassets\\primeicons.0112589c5695a9ed.ttf"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\primeicons.943ab24c43224d29.svg",
+      "PackagePath": "staticwebassets\\primeicons.943ab24c43224d29.svg"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\primeicons.ba3f916dfb64be8c.woff2",
+      "PackagePath": "staticwebassets\\primeicons.ba3f916dfb64be8c.woff2"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\primeicons.f8b9e8a4e401b603.woff",
+      "PackagePath": "staticwebassets\\primeicons.f8b9e8a4e401b603.woff"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\primeicons.ffecb2549ad1765a.eot",
+      "PackagePath": "staticwebassets\\primeicons.ffecb2549ad1765a.eot"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\runtime.b3ba3b56b8af4346.js",
+      "PackagePath": "staticwebassets\\runtime.b3ba3b56b8af4346.js"
+    },
+    {
+      "Id": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\styles.1309ec0b38c2c662.css",
+      "PackagePath": "staticwebassets\\styles.1309ec0b38c2c662.css"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -52,8 +52,11 @@ public class FightSystem : BaseSystem, IFightSystem
             playerStrength += player.Equipment.Weapon1.Damage;
         if (player.Equipment.Weapon2 != null)
             playerStrength += player.Equipment.Weapon2.Damage;
+
+        int enemyStrength = 0;
+        if (CurrentField(userData).Enemy != null)
+            enemyStrength = CurrentField(userData).Enemy.Strength;
         
-        int enemyStrength = CurrentField(userData).Enemy.Strength;
         FightStatusResponse fightStatusResponse = new(userData, playerStrength, enemyStrength, damageScrollsUsed);
 
         await CurrentGroupExceptCurrentUser(userData).SendAsync(AllKeys.GameKeys.FIGHT_CALCULATED, fightStatusResponse);

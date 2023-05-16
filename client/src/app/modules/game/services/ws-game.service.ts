@@ -23,7 +23,7 @@ export class WsGameService {
 
   public initGameConnection(): Observable<void> {
     this.gameHubConnection = new HubConnectionBuilder()
-      .withUrl('ws-backend/game', {
+      .withUrl('/game', {
         accessTokenFactory: () => this.auth.getJwtToken(),
         skipNegotiation: true,
         transport: HttpTransportType.WebSockets
