@@ -1,0 +1,16 @@
+<div mat-dialog-content>
+  <img class="field-img"
+       [style.grid-area]="'image'"
+       [src]="'assets/images/fields/' + (fieldRotation.currentFieldType$ | async)  + '.webp'"
+       [style.transform]="'rotate(' + (fieldRotation.currentFieldRotation$ | async) + 'deg)'"
+       alt="route field">
+
+  <button mat-flat-button [style.grid-area]="'left-btn'" (click)="onRotateToLeft()">
+    <mat-icon [svgIcon]="'undo-solid'"></mat-icon>
+  </button>
+
+  <button mat-flat-button [style.grid-area]="'right-btn'" (click)="onRotateToRight()">
+    <mat-icon [svgIcon]="'redo-solid'"></mat-icon>
+  </button>
+</div>
+

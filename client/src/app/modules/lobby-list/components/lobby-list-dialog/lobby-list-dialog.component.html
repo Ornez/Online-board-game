@@ -1,0 +1,49 @@
+<div mat-dialog-title>
+  <h2 class="mat-dialog-title__label">{{ 'lobby-list.lobbies' | translate }}</h2>
+
+  <button class="mat-dialog-title__close-button" mat-icon-button [mat-dialog-close]="false">
+    <mat-icon svgIcon="times-square-solid"></mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content>
+  <table mat-table [dataSource]="lobbyListStore.lobbies$ | async" *ngIf="lobbyListStore.lobbies$ | async">
+
+    <ng-container matColumnDef="name">
+      <td mat-cell *matCellDef="let element">
+        <div class="mat-table__label">{{ 'lobby-list.name' | translate }}</div>
+        <div class="mat-table__value">{{ element.lobbyName }}</div>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="ownerUsername">
+      <td mat-cell *matCellDef="let element">
+        <div class="mat-table__label">{{ 'lobby-list.ownerUsername' | translate }}</div>
+        <div class="mat-table__value">{{ getOwnerUsername(element) }}</div>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="players">
+      <td mat-cell *matCellDef="let element" [playersDetails]="element.players">
+        <div class="mat-table__label">{{ 'lobby-list.players' | translate }}</div>
+        <div class="mat-table__value">{{ element.players.length + ' / ' + element.maxPlayersNumber }}</div>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <td mat-cell *matCellDef="let element">
+        <button mat-flat-button [disabled]="element.players.length >= element.maxPlayersNumber" (click)="onJoinTheLobby(element)">
+          <mat-icon [svgIcon]="element.isPrivate ? 'lock-solid' : 'lock-open-solid'"></mat-icon>
+            {{'lobby-list.button.join' | translate}}
+        </button>
+    </ng-container>
+
+    <tr mat-row *matRowDef="let row; columns: ['name', 'ownerUsername', 'players', 'actions'];"></tr>
+  </table>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-flat-button (click)="onCreateLobby()">{{ 'lobby-list.button.create' | translate }}</button>
+</div>
+
+<loader *ngIf="!(lobbyListStore.lobbies$ | async)" pointerEvents="none"></loader>

@@ -1,0 +1,50 @@
+@import "../../../../styles/variables";
+
+:host {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 9;
+}
+
+.toolbar-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.toolbar-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: $primary-gradient-transparent;
+  border: $primary-border;
+  border-radius: $primary-border-radius;
+  transition: background .3s, transform .3s;
+  cursor: pointer;
+
+  &__icon {
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+    color: $primary-color;
+    transition: color .15s;
+  }
+
+  &__label {
+    color: $primary-color-opposite;
+    font-family: $primary-font;
+    letter-spacing: 1px;
+    margin-left: 10px;
+  }
+}
+
+.toolbar-item:hover {
+  transform: scale(1.05);
+  background: $secondary-color-transparent;
+
+  .toolbar-item__icon {
+    color: $primary-color-opposite;
+  }
+}

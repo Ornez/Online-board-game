@@ -1,0 +1,12 @@
+@import "src/styles/variables";
+
+.treasures-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.treasure {
+  width: 40px;
+  height: 40px;
+  color: $secondary-color;
+}

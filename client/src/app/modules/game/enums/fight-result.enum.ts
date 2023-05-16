@@ -1,0 +1,5 @@
+export enum FightResult {
+  FIGHT_VICTORY = 'FIGHT_VICTORY',
+  FIGHT_DEFEAT = 'FIGHT_DEFEAT',
+  FIGHT_DRAW = 'FIGHT_DRAW',
+}

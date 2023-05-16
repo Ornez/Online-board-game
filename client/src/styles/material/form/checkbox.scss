@@ -1,0 +1,17 @@
+@import "../../variables";
+
+.mat-checkbox {
+  display: inline-block !important;
+  height: 54px !important;
+  margin-top: 15px !important;
+  padding: 15px 10px !important;
+  border: $primary-border !important;
+  background-color: $secondary-color !important;
+  color: $secondary-color-opposite !important;
+}
+
+.mat-checkbox-checked .mat-checkbox-background,
+.mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element,
+.mat-checkbox:active:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element {
+  background-color: $primary-color !important;
+}

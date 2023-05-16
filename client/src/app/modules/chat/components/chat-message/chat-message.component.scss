@@ -1,0 +1,34 @@
+@import "src/styles/variables";
+
+.message {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 20px auto;
+  grid-gap: 0 5px;
+  grid-template-areas:
+        "username date"
+        "content content";
+  margin: 0 10px 5px 0;
+  padding: 2px 5px;
+  border: $primary-border;
+  border-radius: $primary-border-radius;
+  background-color: $secondary-color-opposite;
+
+  &__username {
+    grid-area: username;
+    color: $primary-color;
+    font-family: $primary-font;
+    letter-spacing: 1px;
+  }
+
+  &__date {
+    grid-area: date;
+    color: $primary-color;
+  }
+
+  &__content {
+    grid-area: content;
+    color: $primary-color-opposite-transparent;
+    overflow-wrap: break-word;
+  }
+}

@@ -1,0 +1,16 @@
+<div class="chat">
+
+  <div class="chat__messages">
+    <chat-message *ngFor="let message of chatStore.chat$ | async" [message]="message"></chat-message>
+  </div>
+
+  <div class="chat__send-message">
+    <form [formGroup]="form" class="form">
+      <mat-form-field>
+        <input matInput formControlName="message" (keydown.enter)="onSendMessage()">
+      </mat-form-field>
+    </form>
+    <button mat-flat-button (click)="onSendMessage()">{{ 'chat.button.send' | translate }}</button>
+  </div>
+
+</div>

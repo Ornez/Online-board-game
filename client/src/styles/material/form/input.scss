@@ -1,0 +1,16 @@
+@import "../../variables";
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  appearance:textfield;
+}
+
+.mat-input-element {
+  color: $primary-color !important;
+  font-weight: bold !important;
+}

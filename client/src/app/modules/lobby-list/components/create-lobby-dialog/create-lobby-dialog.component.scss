@@ -1,0 +1,30 @@
+@import "src/styles/variables";
+
+:host {
+  position: relative;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 30% calc(70% - 10px);
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  width: 100%;
+}
+
+.is-private-form-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 54px;
+  padding: 0 5px;
+  margin-top: 15px !important;
+  background-color: $secondary-color;
+  border: $primary-border;
+  border-radius: $primary-border-radius;
+
+  .mat-icon {
+    color: $secondary-color-opposite !important;
+    height: 18px;
+  }
+}

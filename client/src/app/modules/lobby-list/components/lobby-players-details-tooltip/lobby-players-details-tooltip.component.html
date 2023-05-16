@@ -1,0 +1,19 @@
+<div class="details-wrapper">
+  <div class="detail" *ngFor="let playerDetails of playersDetails">
+
+    <mat-icon
+      class="detail__readiness"
+      [svgIcon]="playerDetails.isReady ? 'shield-check-solid' : 'shield-solid'"
+      [style.color]="playerDetails.isReady ? '#066906' : '#A10606'">
+    </mat-icon>
+
+    <div class="detail__username">{{ playerDetails.username }}</div>
+
+    <mat-icon
+      *ngIf="playerDetails.isOwner"
+      class="detail__is-owner"
+      [svgIcon]="'crown-solid'">
+    </mat-icon>
+
+  </div>
+</div>

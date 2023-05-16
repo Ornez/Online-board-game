@@ -1,0 +1,15 @@
+@import "src/styles/variables";
+
+.health-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 100%;
+  gap: 2px;
+}
+
+.mat-icon {
+  height: 60px;
+  width: 50px;
+  color: $secondary-color;
+}

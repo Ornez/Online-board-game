@@ -1,0 +1,27 @@
+@import "src/styles/variables";
+
+.statistics-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background-color: $secondary-color-transparent;
+  border-radius: $primary-border-radius;
+  border: $primary-border;
+
+  &__label{
+    color: $primary-color;
+    font-family: $primary-font;
+    letter-spacing: 1px;
+  }
+
+  &__value {
+    font-family: $primary-font;
+    color: $secondary-color-opposite;
+    font-size: 20px;
+  }
+}

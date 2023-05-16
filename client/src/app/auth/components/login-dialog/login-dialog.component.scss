@@ -1,0 +1,12 @@
+:host {
+  position: relative;
+}
+
+.mat-dialog-content {
+  width: calc(100vw - 50px) !important;
+  max-width: 300px;
+}
+
+.mat-form-field {
+  width: 100%;
+}

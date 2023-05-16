@@ -1,0 +1,184 @@
+{
+  "home": {
+    "button": {
+      "play": "Graj",
+      "settings": "Ustawienia",
+      "find-lobby": "Znajdź pokój",
+      "help": "Pomoc",
+      "statistics": "Statystyki",
+      "exit": "Wyjście"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "username": "username",
+    "email": "email",
+    "button": {
+      "logout": "Wyloguj"
+    }
+  },
+  "statistics": {
+    "title": "Statystyki",
+    "games-played": "Rozegrane gry",
+    "games-won": "Wygrane gry",
+    "collected-treasures": "Zdobyte skarby",
+    "defeated-opponents": "Pokonani przeciwnicy"
+  },
+  "settings": {
+    "title": "Ustawienia",
+    "label": {
+      "language": "Język",
+      "music": "Muzyka",
+      "sound": "Dźwięk"
+    },
+    "button": {
+      "save-to-server": "Zapisz na serwerze"
+    }
+  },
+  "lobby-list": {
+    "lobbies": "Poczekalnie",
+    "name": "Nazwa",
+    "ownerUsername": "Założyciel",
+    "players": "Liczba graczy",
+    "button": {
+      "join": "Dołącz",
+      "create": "Utwórz nową poczekalnię"
+    }
+  },
+  "lobby": {
+    "label": {
+      "playerName": "Nazwa gracza",
+      "readyToPlay": "Gotowość do gry"
+    },
+    "button": {
+      "leave": "Opuść poczekalnię",
+      "start": "Rozpocznij grę",
+      "copy": "Kopiuj kod poczekalni",
+      "ready": "Gotowy",
+      "notReady": "Niegotowy",
+      "kick": "Wyrzuć"
+    }
+  },
+  "find-lobby": {
+    "title": "Znajdź poczekalnię",
+    "label": {
+      "lobby-code": "Kod poczekalni"
+    },
+    "button": {
+      "find": "Znajdź"
+    }
+  },
+  "create-lobby": {
+    "title": "Utwórz lobby",
+    "button": {
+      "create": "Utwórz"
+    },
+    "label": {
+      "name": "Nazwa lobby",
+      "password": "Hasło",
+      "max-players": "Liczba graczy"
+    }
+  },
+  "login": {
+    "title": "Logowanie",
+    "label": {
+      "username": "Nazwa użytkownika",
+      "password": "Hasło"
+    },
+    "button": {
+      "login": "Zaloguj"
+    }
+  },
+  "register": {
+    "title": "Rejestracja",
+    "label": {
+      "username": "Nazwa użytkownika",
+      "password": "Hasło",
+      "email": "Email"
+    },
+    "button": {
+      "register": "Zarejestruj"
+    }
+  },
+  "chat": {
+    "title": "Chat",
+    "button": {
+      "send": "Wyślij"
+    }
+  },
+  "game": {
+    "label": {
+      "movement-points": "Punkty ruchu"
+    },
+    "field-menu": {
+      "scroll-to-point": "Przewiń do punktu",
+      "show-info": "Pokaż informajce",
+      "move": "Przejdź",
+      "fight": "Walcz",
+      "open-chest": "Otwórz skrzynię",
+      "pick-up-item": "Podnieś przedmiot"
+    },
+    "button": {
+      "draw-the-field": "Losuj pole",
+      "round-over": "Zakończ turę"
+    }
+  },
+  "fight-dialog": {
+    "title": "Walka",
+    "button": {
+      "roll-the-dice": "Rzuć kośćmi",
+      "fight": "Walcz"
+    },
+    "result": {
+      "fight_victory": "Zwycięstwo",
+      "fight_defeat": "Porażka",
+      "fight_draw": "Remis"
+    }
+  },
+  "field-info-dialog": {
+    "title": "Informacje o polu",
+    "label": {
+      "enemy": "Przeciwnik",
+      "reward": "Nagroda",
+      "chest": "Skrzynia",
+      "item": "Przedmiot",
+      "players": "Gracze",
+      "enemy-strength": "Siła"
+    }
+  },
+  "game-over-dialog": {
+    "title": "Koniec gry",
+    "button": {
+      "exit": "Zakończ i wyjdź do menu"
+    }
+  },
+  "enemies": {
+    "dragon": "Smok",
+    "ghost": "Duch",
+    "key_keeper": "Klucznik",
+    "mummy": "Mumia",
+    "rat": "Szczur",
+    "skeleton": "Szkielet",
+    "spider": "Pająk",
+    "vampire": "Wampir"
+  },
+  "equipments": {
+    "attack_scroll": "Zwój ataku",
+    "axe": "Siekiera",
+    "chest": "Skrzynia",
+    "healing_scroll": "Zwój uzdrowienia",
+    "key": "Klucz",
+    "spear": "Włócznia",
+    "sword": "Miecz"
+  },
+  "error": {
+    "username-required": "Nazwa użytkownika jest wymagana",
+    "password-required": "Hasło jest wymagane",
+    "email-required": "Adres email jest wymagany",
+    "name-required": "Nazwa jest wymagana",
+    "max-players-required": "Liczba graczy jest wymagana",
+    "lobby-code-required": "Kod poczekalni jest wymagany",
+    "max-five-players": "Maksymalnie pięciu graczy",
+    "min-one-player": "Minimalnie jeden gracz"
+  }
+}

@@ -1,0 +1,51 @@
+<div class="equipment-container">
+  <div class="equipment-item" style="grid-area: first-weapon">
+    <img *ngIf="equipment.weapon1 else emptyWeaponSlot"
+         [src]="'/assets/images/equipments/' + equipment.weapon1.name + '.png'"
+         alt="player equipment">
+  </div>
+
+  <div class="equipment-item" style="grid-area: second-weapon" >
+    <img *ngIf="equipment.weapon2 else emptyWeaponSlot"
+         [src]="'/assets/images/equipments/' + equipment.weapon2.name + '.png'"
+         alt="player equipment">
+  </div>
+
+  <div class="equipment-item" style="grid-area: key">
+    <img *ngIf="equipment.key else emptyKeySlot"
+         [src]="'/assets/images/equipments/KEY.png'"
+         alt="player equipment">
+  </div>
+
+  <div class="equipment-item" style="grid-area: first-scroll" (click)="useHealingScroll(equipment?.scroll1?.name)">
+    <img *ngIf="equipment.scroll1 else emptyScrollSlot"
+         [src]="'/assets/images/equipments/' + equipment.scroll1.name + '.png'"
+         alt="player equipment">
+  </div>
+
+  <div class="equipment-item" style="grid-area: second-scroll" (click)="useHealingScroll(equipment?.scroll2?.name)">
+    <img *ngIf="equipment.scroll2, else emptyScrollSlot"
+         [src]="'/assets/images/equipments/' + equipment.scroll2.name + '.png'"
+         alt="player equipment">
+  </div>
+
+  <div class="equipment-item" style="grid-area: third-scroll" (click)="useHealingScroll(equipment?.scroll3?.name)">
+    <img *ngIf="equipment.scroll3 else emptyScrollSlot"
+         [src]="'/assets/images/equipments/' + equipment.scroll3.name + '.png'"
+         alt="player equipment">
+  </div>
+</div>
+
+<ng-template #emptyWeaponSlot>
+  <img [src]="'/assets/images/equipments/EMPTY_WEAPON_SLOT.png'" alt="player equipment">
+</ng-template>
+
+<ng-template #emptyKeySlot>
+  <img [src]="'/assets/images/equipments/EMPTY_KEY_SLOT.png'" alt="player equipment">
+</ng-template>
+
+<ng-template #emptyScrollSlot>
+  <img [src]="'/assets/images/equipments/EMPTY_SCROLL_SLOT.png'" alt="player equipment">
+</ng-template>
+
+

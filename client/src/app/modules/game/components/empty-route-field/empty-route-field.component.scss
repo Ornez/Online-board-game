@@ -1,0 +1,45 @@
+@import "src/styles/variables";
+
+:host {
+  position: relative;
+  display: block;
+  height: 150px;
+  width: 150px;
+}
+
+:host:hover > .field--hover {
+  display: block;
+  opacity: .9;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: box-shadow .3s;
+  opacity: 0;
+  box-shadow: inset 0 0 100px #FFFFFF25;
+  background-size: cover;
+  animation: blink-animation 1.5s infinite;
+
+  &--hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    animation: none;
+  }
+}
+
+@keyframes blink-animation {
+  0%   {opacity: 0}
+  50%   {opacity: .5}
+  100% {opacity: 0}
+}

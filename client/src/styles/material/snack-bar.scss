@@ -1,0 +1,27 @@
+@import "src/styles/variables";
+
+.mat-snack-bar-container {
+  margin: 80px 10px 24px 24px !important;
+  border: $primary-border !important;
+  border-radius: $primary-border-radius !important;
+  background: $primary-gradient-transparent !important;
+  font-family: $primary-font !important;
+  font-weight: bold !important;
+  box-shadow: none !important;
+  letter-spacing: .4px !important;
+
+  .mat-button {
+    font-weight: bold !important;
+  }
+}
+
+
+.mat-snack-bar-info {}
+
+.mat-snack-bar-error {
+  color: #FF4040 !important;
+
+  .mat-button {
+    color: #FF4040 !important;
+  }
+}

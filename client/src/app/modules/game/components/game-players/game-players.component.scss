@@ -1,0 +1,37 @@
+@import "src/styles/variables";
+
+:host {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 999;
+}
+
+.players-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0 0 10px;
+  z-index: 9999;
+}
+
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: $primary-border;
+  border-radius: $primary-border-radius;
+  background-color: $secondary-color-transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  transition: transform .3s;
+
+  &--current-round {
+    transform: scale(1.15) translate(6px, 0px);
+  }
+}

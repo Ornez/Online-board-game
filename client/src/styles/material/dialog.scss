@@ -1,0 +1,56 @@
+@import "../variables";
+
+.mat-dialog-container {
+  padding: 0 !important;
+  border-radius: 5px !important;
+  background: $primary-gradient;
+  border: 2px solid #000;
+}
+
+.mat-dialog-title {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 15px 20px 15px 25px;
+  color: $primary-color;
+
+  &__label {
+    font-family: $primary-font !important;
+    margin: 0 !important;
+    font-size: 25px !important;
+  }
+
+  &__close-button .mat-icon {
+    width: 30px !important;
+    height: 30px !important;
+    transition: transform .2s;
+  }
+
+  &__close-button:hover .mat-icon {
+    transform: scale(1.1) rotateZ(10deg);
+  }
+}
+
+.mat-dialog-content {
+  min-height: 110px !important;
+  margin: 20px 15px 10px 0 !important;
+  padding: 0 0 0 24px !important;
+  overflow-x: hidden !important;
+}
+
+.mat-dialog-actions {
+  justify-content: flex-end;
+  margin-bottom: 0 !important;
+  padding: 10px 20px !important;
+}
+
+.mat-dialog--no-background {
+  background: none !important;
+  z-index: 5;
+}
+
+.mat-dialog--no-clickable-background {
+  background: rgba(0,0,0,.32) !important;
+  pointer-events: none;
+}

@@ -1,0 +1,75 @@
+@import "src/styles/variables";
+
+.fight-container {
+  display: grid;
+  grid-template-columns: 180px 80px 80px 180px;
+  grid-template-rows: 30px 300px 50px 64px auto;
+  grid-gap: 0 15px;
+  grid-template-areas: "player-name    .               .              enemy-name"
+                       "player-image   player-strength enemy-strength enemy-image"
+                       "player-image   action          action         enemy-image"
+                       "player-scrolls .               .              .";
+  padding: 0 15px 15px;
+
+  &--result {
+    grid-template-areas: "player-name    .               .              enemy-name"
+                         "player-image   result          result         enemy-image"
+                         "player-image   action          action         enemy-image"
+                         "player-scrolls .               .              .";
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  justify-self: center;
+  align-self: center;
+  font-family: $primary-font;
+  color: $primary-color;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.fight-result {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  font-size: 30px;
+  font-family: $primary-font;
+  color: $primary-color;
+}
+
+.strength {
+  justify-self: center;
+  align-self: center;
+  font-family: $primary-font;
+  color: $primary-color;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+.scrolls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  .scroll {
+    width: 54px;
+    height: 54px;
+    padding: 5px 0;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: $primary-border-radius;
+
+    &--used {
+      background-color: #FFFFFF26;
+    }
+  }
+}
+
+.mat-icon {
+  margin-right: 5px;
+}

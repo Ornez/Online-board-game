@@ -1,0 +1,24 @@
+<button *ngIf="fieldMenuItems.includes(FieldMenuAction.SCROLL_TO_POINT)" mat-flat-button [mat-dialog-close]="FieldMenuAction.SCROLL_TO_POINT">
+  <mat-icon [svgIcon]="'location-solid'"></mat-icon>
+  {{ 'game.field-menu.scroll-to-point' | translate }}
+</button>
+<button *ngIf="fieldMenuItems.includes(FieldMenuAction.SHOW_INFO)" mat-flat-button [mat-dialog-close]="FieldMenuAction.SHOW_INFO">
+  <mat-icon [svgIcon]="'info-square-solid'"></mat-icon>
+  {{ 'game.field-menu.show-info' | translate }}
+</button>
+<button *ngIf="fieldMenuItems.includes(FieldMenuAction.MOVE)" mat-flat-button [mat-dialog-close]="FieldMenuAction.MOVE">
+  <mat-icon [svgIcon]="'walking-solid'"></mat-icon>
+  {{ 'game.field-menu.move' | translate }}
+</button>
+<button *ngIf="fieldMenuItems.includes(FieldMenuAction.FIGHT)" mat-flat-button [mat-dialog-close]="FieldMenuAction.FIGHT">
+  <mat-icon [svgIcon]="'swords-solid'"></mat-icon>
+  {{ 'game.field-menu.fight' | translate }}
+</button>
+<button *ngIf="fieldMenuItems.includes(FieldMenuAction.OPEN_CHEST)" mat-flat-button [mat-dialog-close]="FieldMenuAction.OPEN_CHEST">
+  <mat-icon [svgIcon]="'treasure-chest-solid'"></mat-icon>
+  {{ 'game.field-menu.open-chest' | translate }}
+</button>
+<button *ngIf="fieldMenuItems.includes(FieldMenuAction.PICK_UP_ITEM)" mat-flat-button [mat-dialog-close]="FieldMenuAction.PICK_UP_ITEM">
+  <mat-icon [svgIcon]="'hand-holding-medical-solid'"></mat-icon>
+  {{ 'game.field-menu.pick-up-item' | translate }}
+</button>

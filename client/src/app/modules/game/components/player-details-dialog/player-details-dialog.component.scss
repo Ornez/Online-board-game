@@ -1,0 +1,32 @@
+@import "src/styles/variables";
+
+.player-container {
+  display: grid;
+  grid-template-columns: 50px 180px 200px;
+  grid-template-rows: 300px;
+  grid-gap: 10px;
+  grid-template-areas: "health character equipment"
+                       ".      treasures treasures";
+}
+
+.health {
+  grid-area: health;
+}
+
+.character {
+  grid-area: character;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $secondary-color-opposite-transparent;
+  border: $primary-border;
+  border-radius: $primary-border-radius;
+}
+
+.equipment {
+  grid-area: equipment;
+}
+
+.treasures {
+  grid-area: treasures;
+}

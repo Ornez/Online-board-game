@@ -1,0 +1,21 @@
+<div mat-dialog-title>
+  <h2 class="mat-dialog-title__label">{{ player.userData.username }}</h2>
+
+  <button class="mat-dialog-title__close-button" mat-icon-button [mat-dialog-close]="false">
+    <mat-icon svgIcon="times-square-solid"></mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content>
+  <div class="player-container">
+    <player-health class="health" [healthPoints]="player.healthPoints"></player-health>
+
+    <div class="character" [style.background-image]="'url(/assets/images/characters/' + player.characterName + '.webp)'"></div>
+
+    <player-equipment class="equipment" [equipment]="player.equipment" (useScroll)="onUseHealingScroll()"></player-equipment>
+
+    <collected-treasures class="treasures" [treasures]="player.treasures"></collected-treasures>
+  </div>
+</div>
+
+

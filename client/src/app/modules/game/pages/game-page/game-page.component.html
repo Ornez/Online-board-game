@@ -1,0 +1,51 @@
+<div class="game-container">
+  <toolbar [items]="[Toolbar.PROFILE, Toolbar.STATISTICS, Toolbar.SETTINGS, Toolbar.CHAT]"></toolbar>
+
+  <game-players></game-players>
+
+  <div *ngIf="roundStore.isCurrentPlayersRound()" class="move-points">{{ 'game.label.movement-points' | translate }}: {{ roundStore.movementPoints$ | async }}</div>
+
+  <div #fieldsWrapper class="route-fields__wrapper" scrollToCenter cdkScrollable>
+    <div class="route-fields__grid">
+      <players-positions></players-positions>
+
+      <route-field
+        *ngFor="let field of routeFields"
+        (click)="onOpenFieldMenu($event, field)"
+        [field]="field"
+        [canPlayerMoveToField]="canPlayerMoveToField(field.position.x, field.position.y)"
+        [style.grid-row-start]="21 - field.position.y"
+        [style.grid-row-end]="21 - field.position.y"
+        [style.grid-column-start]="field.position.x"
+        [style.grid-column-end]="field.position.x + 1">
+      </route-field>
+
+      <empty-route-field
+        *ngFor="let field of possibleRouteFields"
+        (click)="onSetRouteField(field)"
+        [fieldType]="fieldRotation.currentFieldType$ | async"
+        [fieldRotation]="fieldRotation.currentFieldRotation$ | async"
+        [style.grid-row-start]=" 21 - field.position.y"
+        [style.grid-row-end]="21 - field.position.y"
+        [style.grid-column-start]="field.position.x"
+        [style.grid-column-end]="field.position.x + 1">
+      </empty-route-field>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button
+      mat-flat-button
+      *ngIf="roundStore.isDrawFieldButtonVisible$ | async"
+      (click)="onDrawRouteField()">
+      {{ 'game.button.draw-the-field' | translate }}
+    </button>
+
+    <button
+      mat-flat-button
+      *ngIf="roundStore.isRoundOverButtonVisible$ | async"
+      (click)="onRoundOver()">
+      {{ 'game.button.round-over' | translate }}
+    </button>
+  </div>
+</div>

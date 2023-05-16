@@ -1,0 +1,37 @@
+.lobby-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "players chat"
+    "actions chat";
+  width: 100vw;
+  height: 100vh;
+  padding: 20px 30px;
+  background: url("/assets/images/background/lobby-background-image.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+.players {
+  grid-area: players;
+}
+
+.chat {
+  grid-area: chat;
+}
+
+.lobby-actions {
+  grid-area: actions;
+}
+
+.mat-flat-button {
+  margin-bottom: 10px;
+
+  &:not(:last-child) {
+    margin-right: 10px !important;
+  }
+}
+
+

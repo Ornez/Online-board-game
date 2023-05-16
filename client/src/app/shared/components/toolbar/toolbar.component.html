@@ -1,0 +1,20 @@
+<div class="toolbar-container">
+
+  <div class="toolbar-item" *ngIf="items.includes(Toolbar.STATISTICS) && auth.isLoggedIn()" (click)="onOpenStatisticsDialog()">
+    <mat-icon class="toolbar-item__icon" [svgIcon]="'chart-line-solid'"></mat-icon>
+  </div>
+
+  <div class="toolbar-item" *ngIf="items.includes(Toolbar.SETTINGS)" (click)="onOpenSettingsDialog()">
+    <mat-icon class="toolbar-item__icon" [svgIcon]="'cog-solid'"></mat-icon>
+  </div>
+
+  <div [matBadge]="chatStore.numberOfUnreadMessages$ | async" [matBadgeHidden]="(chatStore.numberOfUnreadMessages$ | async) === 0" matBadgeColor="warn" class="toolbar-item" *ngIf="items.includes(Toolbar.CHAT)" (click)="onOpenChatDialog()">
+    <mat-icon class="toolbar-item__icon" [svgIcon]="'comments-alt-solid'"></mat-icon>
+  </div>
+
+  <div class="toolbar-item" *ngIf="items.includes(Toolbar.PROFILE)" (click)="onOpenProfileDialog()">
+    <mat-icon class="toolbar-item__icon" [svgIcon]="'user-solid'"></mat-icon>
+    <span class="toolbar-item__label">{{ auth.getUsername() }}</span>
+  </div>
+
+</div>

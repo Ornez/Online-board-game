@@ -1,0 +1,27 @@
+@import "../variables";
+
+.mat-table {
+  background-color: transparent;
+  width: 100%;
+  user-select: none !important;
+
+  &__label {
+    color: $primary-color-transparent;
+    text-align: left;
+  }
+
+  &__value {
+    font-family: 'Poppins-Bold', sans-serif;
+    color: $primary-color;
+    text-align: left;
+  }
+}
+
+.mat-row {
+  border-radius: 2px !important;
+  transition: background-color .1s;
+
+  &:hover {
+    background-color: $secondary-color-transparent;
+  }
+}

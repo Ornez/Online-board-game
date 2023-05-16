@@ -1,0 +1,79 @@
+@import "src/styles/variables";
+
+.section {
+  margin: 0 10px 10px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &__label {
+    color: $primary-color;
+    font-family: $primary-font;
+  }
+
+  &__line {
+    flex: 1;
+    height: 1px;
+    background-color: $primary-color;
+  }
+}
+
+.image {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.label {
+  color: $primary-color;
+  align-self: center;
+  font-family: $primary-font;
+}
+
+.enemy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "enemy enemy"
+    "enemy-image enemy-name"
+    "enemy-image enemy-strength";
+}
+
+.reward {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "reward reward"
+    "reward-image reward-name";
+}
+
+.chest {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "chest"
+    "chest-image";
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "item item"
+    "item-image item-name";
+}
+
+.player {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "players-image players-name";
+}

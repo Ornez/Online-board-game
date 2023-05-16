@@ -1,0 +1,31 @@
+@import "src/styles/variables";
+
+.equipment-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  grid-template-areas:
+    "first-weapon first-scroll"
+    "second-weapon second-scroll"
+    "key third-scroll";
+  width: 100%;
+  height: 100%;
+}
+
+.equipment-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $primary-gradient-transparent;
+  border: $primary-border;
+  border-radius: $primary-border-radius;
+  cursor: pointer;
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+}

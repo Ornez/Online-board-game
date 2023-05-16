@@ -1,0 +1,4 @@
+<div class="health-container">
+  <mat-icon [svgIcon]="'heart-light'" *ngFor="let element of loopRange(6 - healthPoints)"></mat-icon>
+  <mat-icon [svgIcon]="'heart-solid'" *ngFor="let element of loopRange(healthPoints)"></mat-icon>
+</div>

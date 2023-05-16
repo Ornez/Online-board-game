@@ -1,0 +1,12 @@
+.nav-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+
+.spacer {
+  height: 20px;
+}

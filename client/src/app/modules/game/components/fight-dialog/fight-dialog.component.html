@@ -1,0 +1,62 @@
+<div mat-dialog-title>
+  <h2 class="mat-dialog-title__label">{{ 'fight-dialog.title' | translate }}</h2>
+
+  <button class="mat-dialog-title__close-button" *ngIf="fightResult" mat-icon-button [mat-dialog-close]="false">
+    <mat-icon svgIcon="times-square-solid"></mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content>
+  <div class="fight-container" [class.fight-container--result]="fightResult !== undefined">
+    <img [style.grid-area]="'player-image'" class="image" [src]="'assets/images/characters/' + fightPlayer.characterName + '.webp'" alt="player image">
+    <div [style.grid-area]="'player-name'" class="name">{{fight.userData.username}}</div>
+    <div [style.grid-area]="'player-strength'" class="strength" *ngIf="fightResult === undefined">{{ playerStrength }}</div>
+    <div [style.grid-area]="'player-scrolls'" class="scrolls">
+      <img *ngIf="fightPlayer.equipment.scroll1 && fightPlayer.equipment.scroll1.name === Scroll.ATTACK_SCROLL"
+           [src]="'/assets/images/equipments/' + fightPlayer.equipment.scroll1.name + '.png'"
+           (click)="onToggleUsedScroll(0)"
+           [class.scroll--used]="isScrollSelected(0)"
+           class="scroll"
+           alt="scroll equipment">
+      <img *ngIf="fightPlayer.equipment.scroll2 && fightPlayer.equipment.scroll2.name === Scroll.ATTACK_SCROLL"
+           [src]="'/assets/images/equipments/' + fightPlayer.equipment.scroll2.name + '.png'"
+           (click)="onToggleUsedScroll(1)"
+           [class.scroll--used]="isScrollSelected(1)"
+           class="scroll"
+           alt="scroll equipment">
+      <img *ngIf="fightPlayer.equipment.scroll3 && fightPlayer.equipment.scroll3.name === Scroll.ATTACK_SCROLL"
+           [src]="'/assets/images/equipments/' + fightPlayer.equipment.scroll3.name + '.png'"
+           [class.scroll--used]="isScrollSelected(2)"
+           (click)="onToggleUsedScroll(2)"
+           class="scroll"
+           alt="scroll equipment">
+    </div>
+
+    <div [style.grid-area]="'result'" class="fight-result" *ngIf="fightResult">
+      {{ ('fight-dialog.result.' + fightResult | lowercase) | translate}}
+    </div>
+
+    <button [style.grid-area]="'action'"
+            mat-flat-button
+            class="action"
+            *ngIf="fightState === FightState.BEGIN && roundStore.isCurrentPlayersRound()"
+            (click)="onRollTheDice()">
+      <mat-icon [svgIcon]="'dice-solid'"></mat-icon>
+      {{ 'fight-dialog.button.roll-the-dice' | translate }}
+    </button>
+    <button [style.grid-area]="'action'"
+            mat-flat-button
+            class="action"
+            *ngIf="fightState === FightState.ROLL_THE_DICE && roundStore.isCurrentPlayersRound()"
+            (click)="onFight()">
+      <mat-icon [svgIcon]="'swords-solid'"></mat-icon>
+      {{ 'fight-dialog.button.fight' | translate }}
+    </button>
+
+    <div [style.grid-area]="'enemy-strength'" class="strength" *ngIf="fightResult === undefined">{{fight.enemyDamage}}</div>
+    <img [style.grid-area]="'enemy-image'" class="image" [src]="'assets/images/enemies/' + fight.enemyName + '.webp'" alt="enemy image">
+    <div [style.grid-area]="'enemy-name'" class="name">{{'enemies.' + fight.enemyName | lowercase | translate}}</div>
+  </div>
+</div>
+
+

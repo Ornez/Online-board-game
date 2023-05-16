@@ -1,0 +1,28 @@
+@import "src/styles/variables";
+
+.button {
+  min-width: 330px;
+  height: 60px;
+  background: $primary-gradient-transparent;
+  transition: background .15s, min-width .1s;
+  text-align: center;
+
+  &__label {
+    color: $primary-color;
+    text-transform: uppercase;
+    font-family: $primary-font;
+    letter-spacing: 1px;
+    line-height: 50px;
+    font-size: 30px;
+    transition: color .15s;
+  }
+}
+
+.button:hover {
+  background: $secondary-color-transparent;
+  min-width: 350px;
+
+  .button__label {
+    color: $primary-color-opposite;
+  }
+}

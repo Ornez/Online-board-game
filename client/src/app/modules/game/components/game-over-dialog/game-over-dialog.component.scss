@@ -1,0 +1,60 @@
+@import "src/styles/variables";
+
+.podium-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+  grid-template-areas:
+    ".              first-players .            "
+    "second-players first-podium  .            "
+    "second-podium  first-podium  third-players"
+    "second-podium  first-podium  third-podium ";
+}
+
+.podium {
+  position: relative;
+  background-color: $primary-color-transparent;
+  border-radius: $primary-border-radius;
+  border: $primary-border;
+
+  &__number {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: $secondary-color-opposite;
+    font-family: $primary-font;
+    font-size: 40px;
+  }
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player {
+  text-align: center;
+  margin: 0 8px;
+
+  &__image {
+    max-width: 50px;
+    max-height: 100px;
+    object-fit: contain;
+  }
+
+  &__name {
+    display: block;
+    font-family: $primary-font;
+    color: $primary-color;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+.mat-dialog-content {
+  overflow: hidden;
+}

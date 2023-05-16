@@ -1,0 +1,32 @@
+@import "src/styles/variables";
+
+.details-wrapper {
+  padding: 10px 15px;
+  border-radius: 2px;
+  border: $primary-border;
+  background: $secondary-color;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+
+  &__readiness {
+    margin-left: 5px;
+    width: 15px;
+  }
+
+  &__username {
+    margin: 0 5px;
+    color: $primary-color;
+    font-family: $primary-font;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  &__is-owner {
+    width: 15px;
+    color: $primary-color;
+  }
+}

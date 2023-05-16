@@ -1,0 +1,54 @@
+@import "../../variables";
+
+.mat-form-field {
+  width: 100%;
+  padding: 5px 10px !important;
+  background-color: $secondary-color !important;
+  border: $primary-border !important;
+
+  &:not(:first-child) {
+    margin-top: 15px !important;
+  }
+
+  .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+    transition: padding-bottom .3s;
+  }
+
+  .mat-form-field-underline {
+    bottom: 0 !important;
+    transition: bottom .3s;
+  }
+}
+
+
+.mat-form-field-invalid {
+  .mat-form-field-wrapper {
+    padding-bottom: 1.25em !important;
+  }
+
+  .mat-form-field-underline {
+    bottom: 1.25em !important;
+    background-color: $primary-color !important;
+  }
+}
+
+.mat-focused {
+  .mat-form-field-ripple {
+    background-color: $secondary-color-opposite !important;
+  }
+}
+
+
+.mat-form-field-label,
+.mat-form-field-prefix,
+.mat-form-field-suffix {
+  color: $secondary-color-opposite !important;
+}
+
+
+.mat-form-field-flex {
+  gap: 5px !important;
+}
+
+

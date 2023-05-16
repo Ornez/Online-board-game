@@ -1,0 +1,24 @@
+<div mat-dialog-title>
+  <h2 class="mat-dialog-title__label">{{ 'chat.title' | translate }}</h2>
+
+  <button class="mat-dialog-title__close-button" mat-icon-button [mat-dialog-close]="false">
+    <mat-icon svgIcon="times-square-solid"></mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content>
+  <div class="chat__messages">
+    <chat-message *ngFor="let message of chatStore.chat$ | async" [message]="message"></chat-message>
+  </div>
+
+  <div class="chat__send-message">
+    <form [formGroup]="form" class="form">
+      <mat-form-field>
+        <input matInput formControlName="message" (keydown.enter)="onSendMessage()">
+      </mat-form-field>
+    </form>
+    <button mat-flat-button (click)="onSendMessage()">{{ 'chat.button.send' | translate }}</button>
+  </div>
+</div>
+
+

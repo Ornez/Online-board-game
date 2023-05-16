@@ -1,0 +1,42 @@
+<div mat-dialog-title>
+  <h2 class="mat-dialog-title__label">{{ 'game-over-dialog.title' | translate }}</h2>
+</div>
+
+<div mat-dialog-content>
+  <div class="podium-wrapper">
+    <div class="players" [style.grid-area]="'first-players'" [style.align-self]="'end'">
+      <div class="player" *ngFor="let player of results.firstPlace">
+        <img class="player__image" [src]="'assets/images/characters/' + player.characterName + '.webp'" alt="character image">
+        <span class="player__name">{{ player.userData.username }}</span>
+      </div>
+    </div>
+
+    <div class="players" [style.grid-area]="'second-players'" [style.align-self]="'end'">
+      <div class="player" *ngFor="let player of results.secondPlace">
+        <img class="player__image" [src]="'assets/images/characters/' + player.characterName + '.webp'" alt="character image">
+        <span class="player__name">{{ player.userData.username }}</span>
+      </div>
+    </div>
+
+    <div class="players" [style.grid-area]="'third-players'" [style.align-self]="'end'">
+      <div class="player" *ngFor="let player of results.thirdPlace">
+        <img class="player__image" [src]="'assets/images/characters/' + player.characterName + '.webp'" alt="character image">
+        <span class="player__name">{{ player.userData.username }}</span>
+      </div>
+    </div>
+
+    <div [style.grid-area]="'first-podium'" class="podium">
+      <div class="podium__number">1</div>
+    </div>
+    <div [style.grid-area]="'second-podium'" class="podium">
+      <div class="podium__number">2</div>
+    </div>
+    <div [style.grid-area]="'third-podium'" class="podium">
+      <div class="podium__number">3</div>
+    </div>
+  </div>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-flat-button (click)="onExit()" >{{ 'game-over-dialog.button.exit' | translate }}</button>
+</div>

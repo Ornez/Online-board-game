@@ -1,0 +1,38 @@
+<div mat-dialog-title>
+  <h2 class="mat-dialog-title__label">{{ 'statistics.title' | translate }}</h2>
+
+  <button class="mat-dialog-title__close-button" mat-icon-button [mat-dialog-close]="false">
+    <mat-icon svgIcon="times-square-solid"></mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content>
+  <ng-container *ngIf="!(statisticsStore.statisticsLoading$ | async)">
+
+    <div class="statistics-row">
+      <div class="statistics-row__label"> {{ 'statistics.games-played' | translate }}</div>
+      <div class="statistics-row__value"> {{ statistics?.gamesPlayed }} </div>
+    </div>
+
+    <div class="statistics-row">
+      <div class="statistics-row__label"> {{ 'statistics.games-won' | translate }}</div>
+      <div class="statistics-row__value"> {{ statistics?.gamesWon }} </div>
+    </div>
+
+    <div class="statistics-row">
+      <div class="statistics-row__label"> {{ 'statistics.collected-treasures' | translate }}</div>
+      <div class="statistics-row__value"> {{ statistics?.openedChests }} </div>
+    </div>
+
+    <div class="statistics-row">
+      <div class="statistics-row__label"> {{ 'statistics.defeated-opponents' | translate }}</div>
+      <div class="statistics-row__value"> {{ statistics?.defeatedEnemies }} </div>
+    </div>
+
+  </ng-container>
+</div>
+
+<loader *ngIf="statisticsStore.statisticsLoading$ | async"></loader>
+
+
+

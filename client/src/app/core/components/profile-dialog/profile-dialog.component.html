@@ -1,0 +1,29 @@
+<div mat-dialog-title>
+  <h2 class="mat-dialog-title__label">{{ 'profile.title' | translate }}</h2>
+
+  <button class="mat-dialog-title__close-button" mat-icon-button [mat-dialog-close]="false">
+    <mat-icon svgIcon="times-square-solid"></mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content>
+  <ng-container *ngIf="!(profileStore.profileLoading$ | async)">
+
+    <div class="profile-row">
+      <div class="profile-row__label"> {{ 'profile.username' | translate }}</div>
+      <div class="profile-row__value"> {{ profile?.username }} </div>
+    </div>
+
+    <div class="profile-row">
+      <div class="profile-row__label"> {{ 'profile.email' | translate }}</div>
+      <div class="profile-row__value"> {{ profile?.email }} </div>
+    </div>
+
+  </ng-container>
+</div>
+
+<loader *ngIf="profileStore.profileLoading$ | async"></loader>
+
+<div mat-dialog-actions>
+  <button mat-flat-button (click)="onLogout()" [mat-dialog-close]="false">{{ 'profile.button.logout' | translate }}</button>
+</div>

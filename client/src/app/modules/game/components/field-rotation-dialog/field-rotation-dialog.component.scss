@@ -1,0 +1,17 @@
+@import "src/styles/variables";
+
+.mat-dialog-content {
+  display: grid;
+  grid-gap: 6px 3px;
+  grid-template-areas:
+        "image image"
+        "left-btn right-btn";
+  margin: 12px 10px !important;
+  padding: 0 !important;
+}
+
+.field-img {
+  width: 150px;
+  border-radius: $primary-border-radius;
+  border: $primary-border;
+}

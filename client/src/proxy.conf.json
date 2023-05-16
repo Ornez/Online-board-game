@@ -1,0 +1,18 @@
+{
+  "/http-backend/*": {
+    "target": "http://127.0.0.1:5000",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": { "^/http-backend": "" }
+  },
+  "/ws-backend/*": {
+    "target": "ws://127.0.0.1:5000",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "ws": true,
+    "pathRewrite": { "^/ws-backend": "" }
+  }
+}
+

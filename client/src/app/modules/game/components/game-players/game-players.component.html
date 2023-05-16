@@ -1,0 +1,9 @@
+<div class="players-container">
+  <div class="player"
+       #playerTrigger
+       *ngFor="let player of gameStore.players$ | async"
+       [class.player--current-round]="player.userData.username === (roundStore.currentRoundPlayer$ | async)?.username"
+       [style.background-image]="'url(/assets/images/characters/' + player.characterName + '_ICON.webp)'"
+       (click)="onOpenPlayerDialog(player, playerTrigger)">
+  </div>
+</div>

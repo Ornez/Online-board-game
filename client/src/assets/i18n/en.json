@@ -1,0 +1,184 @@
+{
+  "home": {
+    "button": {
+      "play": "Play",
+      "settings": "Settings",
+      "find-lobby": "Find lobby",
+      "help": "Help",
+      "statistics": "Statistics",
+      "exit": "Exit"
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "username": "username",
+    "email": "email",
+    "button": {
+      "logout": "Logout"
+    }
+  },
+  "statistics": {
+    "title": "Statistics",
+    "games-played": "Games played",
+    "games-won": "Games won",
+    "collected-treasures": "Collected treasures",
+    "defeated-opponents": "Defeated opponents"
+  },
+  "settings": {
+    "title": "Settings",
+    "label": {
+      "language": "Language",
+      "music": "Music",
+      "sound": "Sound"
+    },
+    "button": {
+      "save-to-server": "Save to server"
+    }
+  },
+  "lobby-list": {
+    "lobbies": "Lobbies",
+    "name": "Name",
+    "ownerUsername": "Owner",
+    "players": "Number of players",
+    "button": {
+      "join": "Join",
+      "create": "Create new lobby"
+    }
+  },
+  "lobby": {
+    "label": {
+      "playerName": "Player name",
+      "readyToPlay": "Ready to play"
+    },
+    "button": {
+      "leave": "Leave lobby",
+      "start": "Start game",
+      "copy": "Copy lobby code",
+      "ready": "Ready",
+      "notReady": "Not Ready",
+      "kick": "Kick"
+    }
+  },
+  "find-lobby": {
+    "title": "Find lobby",
+    "label": {
+      "lobby-code": "Lobby code"
+    },
+    "button": {
+      "find": "Find"
+    }
+  },
+  "create-lobby": {
+    "title": "Create lobby",
+    "button": {
+      "create": "Create"
+    },
+    "label": {
+      "name": "Lobby name",
+      "password": "Password",
+      "max-players": "Number of players"
+    }
+  },
+  "login": {
+    "title": "Login",
+    "label": {
+      "username": "Username",
+      "password": "Password"
+    },
+    "button": {
+      "login": "Login"
+    }
+  },
+  "register": {
+    "title": "Register",
+    "label": {
+      "username": "Username",
+      "password": "Password",
+      "email": "Email"
+    },
+    "button": {
+      "register": "Register"
+    }
+  },
+  "chat": {
+    "title": "Chat",
+    "button": {
+      "send": "Send"
+    }
+  },
+  "game": {
+    "label": {
+      "movement-points": "Movement points"
+    },
+    "field-menu": {
+      "scroll-to-point": "Scroll to point",
+      "show-info": "Show info",
+      "move": "Move",
+      "fight": "Fight",
+      "open-chest": "Open Chest",
+      "pick-up-item": "Pick up item"
+    },
+    "button": {
+      "draw-the-field": "Draw the field",
+      "round-over": "Round over"
+    }
+  },
+  "fight-dialog": {
+    "title": "Fight",
+    "button": {
+      "roll-the-dice": "Roll the dice",
+      "fight": "Fight"
+    },
+    "result": {
+      "fight_victory": "Victory",
+      "fight_defeat": "Defeat",
+      "fight_draw": "Draw"
+    }
+  },
+  "field-info-dialog": {
+    "title": "Field info",
+    "label": {
+      "enemy": "Enemy",
+      "reward": "Reward",
+      "chest": "Chest",
+      "item": "Item",
+      "players": "Players",
+      "enemy-strength": "Strength"
+    }
+  },
+  "game-over-dialog": {
+    "title": "Game over",
+    "button": {
+      "exit": "Exit to menu"
+    }
+  },
+  "enemies": {
+    "dragon": "Dragon",
+    "ghost": "Ghost",
+    "key_keeper": "Key keeper",
+    "mummy": "Mummy",
+    "rat": "Rat",
+    "skeleton": "Skeleton",
+    "spider": "Spider",
+    "vampire": "Vampire"
+  },
+  "equipments": {
+    "attack_scroll": "Attack scroll",
+    "axe": "Axe",
+    "chest": "Chest",
+    "healing_scroll": "Healing scroll",
+    "key": "Key",
+    "spear": "Spear",
+    "sword": "Sword"
+  },
+  "error": {
+    "username-required": "Username is required",
+    "password-required": "Password is required",
+    "email-required": "Email is required",
+    "name-required": "Name is required",
+    "max-players-required": "Number of players is required",
+    "lobby-code-required": "Lobby code is required",
+    "max-five-players": "Max five players",
+    "min-one-player": "Min one player"
+  }
+}

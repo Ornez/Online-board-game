@@ -1,0 +1,12 @@
+@import "../variables";
+
+.mat-flat-button {
+  background-color: $primary-color !important;
+  font-family: $primary-font !important;
+  color: $secondary-color-opposite !important;
+  border: 1px solid #000 !important;
+
+  &:disabled {
+    background-color: $secondary-color !important;
+  }
+}

@@ -1,0 +1,4 @@
+export enum Scroll {
+  ATTACK_SCROLL = 'ATTACK_SCROLL',
+  HEALING_SCROLL = 'HEALING_SCROLL'
+}

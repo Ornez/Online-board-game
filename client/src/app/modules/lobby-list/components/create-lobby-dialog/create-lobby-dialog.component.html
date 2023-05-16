@@ -1,0 +1,51 @@
+<div mat-dialog-title>
+  <h2 class="mat-dialog-title__label">{{ 'create-lobby.title' | translate }}</h2>
+
+  <button class="mat-dialog-title__close-button" mat-icon-button [mat-dialog-close]="false">
+    <mat-icon svgIcon="times-square-solid"></mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content>
+  <form [formGroup]="form" class="form">
+
+    <mat-form-field>
+      <mat-label>{{ 'create-lobby.label.name' | translate }}</mat-label>
+      <mat-icon matPrefix>more</mat-icon>
+      <input matInput formControlName="lobbyName" autocomplete="off">
+      <mat-error *ngIf="form.controls['lobbyName'].hasError('required')">{{ 'error.name-required' | translate }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>{{ 'create-lobby.label.max-players' | translate }}</mat-label>
+      <mat-icon matPrefix>videogame_asset</mat-icon>
+      <input matInput formControlName="maxPlayersNumber" type="number" autocomplete="off">
+      <mat-error *ngIf="form.controls['maxPlayersNumber'].hasError('required')">{{ 'error.max-players-required' | translate }}</mat-error>
+      <mat-error *ngIf="form.controls['maxPlayersNumber'].hasError('max')">{{ 'error.max-five-players' | translate }}</mat-error>
+      <mat-error *ngIf="form.controls['maxPlayersNumber'].hasError('min')">{{ 'error.min-one-player' | translate }}</mat-error>
+    </mat-form-field>
+
+    <div class="form-row">
+      <div class="is-private-form-field">
+        <mat-icon [svgIcon]="'lock-open-solid'"></mat-icon>
+        <mat-slide-toggle formControlName="isPrivate"></mat-slide-toggle>
+        <mat-icon [svgIcon]="'lock-solid'"></mat-icon>
+      </div>
+
+      <mat-form-field *ngIf="form?.value?.isPrivate">
+        <mat-label>{{ 'create-lobby.label.password' | translate }}</mat-label>
+        <mat-icon matPrefix>lock</mat-icon>
+        <input matInput formControlName="password" [type]="isPasswordVisible ? 'text' : 'password'">
+        <mat-icon matSuffix (click)="onTogglePasswordVisibility()">{{ isPasswordVisible ? 'visibility_off' : 'visibility' }}</mat-icon>
+        <mat-error *ngIf="form.controls['password'].hasError('required')">{{ 'error.password-required' | translate }}</mat-error>
+      </mat-form-field>
+    </div>
+
+  </form>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-flat-button (click)="onCreate()" [disabled]="form.invalid">{{ 'create-lobby.button.create' | translate }}</button>
+</div>
+
+<loader *ngIf="lobbyListStore.createLobbyLoading$ | async" [background]="true"></loader>

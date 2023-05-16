@@ -1,0 +1,42 @@
+<div mat-dialog-title>
+  <h2 class="mat-dialog-title__label">{{ 'settings.title' | translate }}</h2>
+
+  <button class="mat-dialog-title__close-button" mat-icon-button [mat-dialog-close]="false">
+    <mat-icon svgIcon="times-square-solid"></mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content>
+  <div class="settings-row">
+    <span class="settings-row__label">{{ 'settings.label.language' | translate }}</span>
+
+    <div class="settings-row__action">
+      <mat-select [value]="getCurrentLanguageCode()" (valueChange)="setLanguage($event)">
+        <mat-option *ngFor="let language of getLanguages()" [value]="language.code">{{ language.name | translate }}</mat-option>
+      </mat-select>
+    </div>
+  </div>
+
+  <div class="settings-row">
+    <span class="settings-row__label">{{ 'settings.label.music' | translate }}</span>
+
+    <div class="settings-row__action">
+      <mat-slider thumbLabel [min]="0" [max]="100" [step]="1" [value]="settingsStore.settingsMusicVolume$ | async" (valueChange)="onChangeMusicVolume($event)"></mat-slider>
+    </div>
+  </div>
+
+  <div class="settings-row">
+    <span class="settings-row__label">{{ 'settings.label.sound' | translate}}</span>
+
+    <div class="settings-row__action">
+      <mat-slider thumbLabel [min]="0" [max]="100" [step]="1" [value]="settingsStore.settingsSoundVolume$ | async" (valueChange)="onChangeSoundVolume($event)"></mat-slider>
+    </div>
+  </div>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-flat-button (click)="settingsStore.saveSettings()">{{ 'settings.button.save-to-server' | translate }}</button>
+</div>
+
+<loader *ngIf="settingsStore.settingsLoading$ | async" [background]="true"></loader>
+

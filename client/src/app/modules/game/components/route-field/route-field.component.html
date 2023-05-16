@@ -1,0 +1,28 @@
+<div
+  class="field"
+  [style.background-image]="'url(/assets/images/fields/' + field.fieldType  + '.webp)'"
+  [style.transform]="'rotate(' + field.rotation + 'deg)'"
+  [class.field--possible-to-move]="canPlayerMoveToField">
+
+  <img
+    *ngIf="field.chest"
+    [style.transform]="'translate(-50%, -50%) rotate(-' + field.rotation + 'deg)'"
+    [src]="'assets/images/equipments/CHEST.png'"
+    class="chest"
+    alt="chest">
+
+  <img
+    *ngIf="field.itemName"
+    [style.transform]="'translate(-50%, -50%) rotate(-' + field.rotation + 'deg)'"
+    [src]="'assets/images/equipments/' + field.itemName + '.png'"
+    class="item"
+    alt="item">
+
+  <img
+    *ngIf="field.enemy"
+    [style.transform]="'translate(-50%, -50%) rotate(-' + field.rotation + 'deg)'"
+    [src]="'assets/images/enemies/' + field.enemy.name  + '.webp'"
+    class="enemy"
+    alt="enemy">
+</div>
+

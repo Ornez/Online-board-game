@@ -1,0 +1,25 @@
+<div mat-dialog-title>
+  <h2 class="mat-dialog-title__label">{{ 'find-lobby.title' | translate }}</h2>
+
+  <button class="mat-dialog-title__close-button" mat-icon-button [mat-dialog-close]="false">
+    <mat-icon svgIcon="times-square-solid"></mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content>
+  <form [formGroup]="form" class="form">
+
+    <mat-form-field>
+      <mat-label>{{ 'find-lobby.label.lobby-code' | translate }}</mat-label>
+      <mat-icon matPrefix>more</mat-icon>
+      <input matInput formControlName="lobbyCode">
+      <mat-error *ngIf="form.controls['lobbyCode'].hasError('required')">{{ 'error.lobby-code-required' | translate }}</mat-error>
+    </mat-form-field>
+
+  </form>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-flat-button [disabled]="form.invalid">{{ 'find-lobby.button.find' | translate }}</button>
+</div>
+

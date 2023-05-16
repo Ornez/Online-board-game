@@ -1,0 +1,12 @@
+<div class="lobby-container">
+
+  <lobby-players class="players"></lobby-players>
+
+  <chat class="chat"></chat>
+
+  <div class="lobby-actions">
+    <button mat-flat-button (click)="onCopyLobbyCode()">{{ 'lobby.button.copy' | translate }}</button>
+    <button mat-flat-button (click)="onLeaveLobby()">{{ 'lobby.button.leave' | translate }}</button>
+    <button mat-flat-button (click)="onStartGame()" *ngIf="isStartGameButtonVisible()" [disabled]="!isAllPlayersReady">{{ 'lobby.button.start' | translate }}</button>
+  </div>
+</div>

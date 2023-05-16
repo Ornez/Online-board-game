@@ -1,0 +1,59 @@
+<div mat-dialog-title>
+  <h2 class="mat-dialog-title__label">{{ 'field-info-dialog.title' | translate }}</h2>
+
+  <button class="mat-dialog-title__close-button" mat-icon-button [mat-dialog-close]="false">
+    <mat-icon svgIcon="times-square-solid"></mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content>
+  <div class="section enemy" *ngIf="data.enemy">
+    <div [style.grid-area]="'enemy'" class="title">
+      <span class="title__label">{{ 'field-info-dialog.label.enemy' | translate }}</span>
+      <div class="title__line"></div>
+    </div>
+    <img [style.grid-area]="'enemy-image'" class="image" [src]="'assets/images/enemies/' + data.enemy.name  + '.webp'" alt="enemy image">
+    <span [style.grid-area]="'enemy-name'" class="label">{{ 'enemies.' + data.enemy.name | lowercase | translate }}</span>
+    <span [style.grid-area]="'enemy-strength'" class="label">{{ ('field-info-dialog.label.enemy-strength' | translate) + ': ' + data.enemy.strength }}</span>
+  </div>
+
+  <div class="section reward" *ngIf="data.enemy">
+    <div [style.grid-area]="'reward'" class="title">
+      <span class="title__label">{{ 'field-info-dialog.label.reward' | translate }}</span>
+      <div class="title__line"></div>
+    </div>
+    <img [style.grid-area]="'reward-image'" class="image" [src]="'assets/images/equipments/' + data.enemy.itemReward + '.png'" alt="reward image">
+    <span [style.grid-area]="'reward-name'" class="label">{{ 'equipments.' + data.enemy.itemReward | lowercase | translate }}</span>
+  </div>
+
+  <div class="section chest" *ngIf="data.chest">
+    <div [style.grid-area]="'chest'" class="title">
+      <span class="title__label">{{ 'field-info-dialog.label.chest' | translate }}</span>
+      <div class="title__line"></div>
+    </div>
+    <img [style.grid-area]="'chest-image'" class="image" [src]="'assets/images/equipments/CHEST.png'" alt="chest image">
+  </div>
+
+  <div class="section item" *ngIf="data.itemName">
+    <div [style.grid-area]="'item'" class="title">
+      <span class="title__label">{{ 'field-info-dialog.label.item' | translate }}</span>
+      <div class="title__line"></div>
+    </div>
+    <img [style.grid-area]="'item-image'" class="image" [src]="'assets/images/equipments/' + data.itemName + '.png'" alt="item image">
+    <span [style.grid-area]="'item-name'" class="label">{{ 'equipments.' + data.itemName | lowercase | translate }}</span>
+  </div>
+
+  <div class="section players" *ngIf="data.players && data.players.length > 0">
+    <div class="title">
+      <span class="title__label">{{ 'field-info-dialog.label.players' | translate }}</span>
+      <div class="title__line"></div>
+    </div>
+
+    <div class="player" *ngFor="let player of data.players">
+      <img [style.grid-area]="'players-image'" class="image" [src]="'assets/images/characters/' + player.characterName + '_ICON.webp'" alt="player image">
+      <span [style.grid-area]="'players-name'" class="label">{{ player.userData.username }}</span>
+    </div>
+  </div>
+
+</div>
+

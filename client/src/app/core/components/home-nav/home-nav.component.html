@@ -1,0 +1,11 @@
+<div class="nav-container">
+  <navigation-button (click)="onOpenLobbyListDialog()">{{ 'home.button.play' | translate }}</navigation-button>
+  <navigation-button (click)="onOpenFindLobbyDialog()">{{ 'home.button.find-lobby' | translate }}</navigation-button>
+
+  <div class="spacer"></div>
+
+  <navigation-button (click)="onOpenSettingsDialog()">{{ 'home.button.settings' | translate }}</navigation-button>
+  <navigation-button>{{ 'home.button.help' | translate }}</navigation-button>
+  <navigation-button (click)="onOpenStatisticsDialog()">{{ 'home.button.statistics' | translate }}</navigation-button>
+  <navigation-button (click)="onExit()">{{ 'home.button.exit' | translate }}</navigation-button>
+</div>

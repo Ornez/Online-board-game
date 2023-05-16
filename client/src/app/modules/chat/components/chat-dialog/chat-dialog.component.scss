@@ -1,0 +1,29 @@
+@import "src/styles/variables";
+
+.chat {
+  &__messages {
+    min-height: 60px;
+    height: 100%;
+    max-height: 315px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+
+  &__send-message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+
+    .form {
+      margin-bottom: 0;
+      width: auto;
+      flex: 1;
+    }
+
+    ::ng-deep .mat-form-field-infix {
+      border: 0 !important;
+    }
+  }
+}

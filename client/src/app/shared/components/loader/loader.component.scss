@@ -1,0 +1,107 @@
+@import "src/styles/variables";
+
+$blockSize: 1.5em;
+$delay: .065s;
+$duration: .88s;
+$blockMargin: $blockSize / 3;
+$loaderSize: $blockSize * 3 + $blockMargin * 2;
+
+@mixin animation( $animation_1: null, $animation_2: null ) {
+  @if ($animation_2 != null) { animation: $animation_1, $animation_2; }
+  @else if ($animation_1 != null) { animation: $animation_1; }
+}
+
+:host {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: $loaderSize;
+  height: $loaderSize;
+  margin-left: -$loaderSize /2;
+  margin-top: -$loaderSize / 2;
+}
+
+.loader-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  opacity: 0;
+  width: $blockSize;
+  height: $blockSize;
+  background: $primary-color;
+  @include animation(show $duration step-end infinite alternate, pulse $duration linear infinite alternate);
+}
+
+.loader-block:nth-child(1) {
+  transform: translate(0, 0);
+  animation-delay: 1 * $delay;
+}
+
+.loader-block:nth-child(2) {
+  transform: translate($blockSize + $blockMargin, 0);
+  animation-delay: 2 * $delay;
+}
+
+.loader-block:nth-child(3) {
+  transform: translate(($blockSize * 2) + ($blockMargin * 2), 0);
+  animation-delay: 3 * $delay;
+}
+
+.loader-block:nth-child(4) {
+  transform: translate(0, $blockSize + $blockMargin);
+  animation-delay: 5 * $delay;
+}
+
+.loader-block:nth-child(5) {
+  transform: translate($blockSize + $blockMargin, $blockSize + $blockMargin);
+  animation-delay: 2 * $delay;
+}
+
+.loader-block:nth-child(6) {
+  transform: translate(($blockSize * 2) + ($blockMargin * 2), $blockSize + $blockMargin);
+  animation-delay: 7 * $delay;
+}
+
+.loader-block:nth-child(7) {
+  transform: translate(0, ($blockSize * 2) + ($blockMargin * 2));
+  animation-delay: 6 * $delay;
+}
+
+.loader-block:nth-child(8) {
+  transform: translate($blockSize + $blockMargin, ($blockSize * 2) + ($blockMargin * 2));
+  animation-delay: 4 * $delay;
+}
+
+.loader-block:nth-child(9) {
+  transform: translate(($blockSize * 2) + ($blockMargin * 2), ($blockSize * 2) + ($blockMargin * 2));
+}
+
+.loader-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+}
+
+@keyframes pulse {
+  0%, 40% { background: $primary-color; }
+  100% { background: $primary-color-transparent; }
+}
+
+@keyframes show {
+  0%, 40% { opacity: 0; }
+  41%, 100% { opacity: 1; }
+}

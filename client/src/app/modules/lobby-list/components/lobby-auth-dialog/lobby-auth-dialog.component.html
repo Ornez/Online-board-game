@@ -1,0 +1,25 @@
+<div mat-dialog-title>
+  <h2 class="mat-dialog-title__label">{{ lobby?.lobbyName }}</h2>
+
+  <button class="mat-dialog-title__close-button" mat-icon-button [mat-dialog-close]="false">
+    <mat-icon svgIcon="times-square-solid"></mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content>
+  <form [formGroup]="form" class="form">
+    <mat-form-field>
+      <mat-label>{{ 'login.label.password' | translate }}</mat-label>
+      <mat-icon matPrefix>lock</mat-icon>
+      <input matInput formControlName="password" [type]="isPasswordVisible ? 'text' : 'password'">
+      <mat-icon matSuffix (click)="onTogglePasswordVisibility()">{{ isPasswordVisible ? 'visibility_off' : 'visibility' }}</mat-icon>
+      <mat-error *ngIf="form.controls['password'].hasError('required')">{{ 'error.password-required' | translate }}</mat-error>
+    </mat-form-field>
+  </form>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-flat-button (click)="onJoin()" [disabled]="form.invalid">{{ 'lobby-list.button.join' | translate }}</button>
+</div>
+
+<loader *ngIf="lobbyListStore.joinTheLobbyLoading$ | async" [background]="true"></loader>

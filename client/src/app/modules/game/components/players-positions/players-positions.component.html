@@ -1,0 +1,7 @@
+<img
+  class="player"
+  *ngFor="let player of players"
+  [src]="'assets/images/characters/' + player.characterName + '.webp'"
+  [style.top]="(21 - player.position.y - 1) * 150 + 'px'"
+  [style.left]="(player.position.x - 1) * 150 + 75 + 'px'"
+  alt="player">

@@ -1,0 +1,26 @@
+:host {
+  position: relative;
+}
+
+.mat-column-name {
+  width: 40%;
+}
+
+.mat-column-owner {
+  width: 20%;
+}
+
+.mat-column-players {
+  text-align: center;
+  width: 20%;
+}
+
+.mat-column-isPrivate {
+  text-align: center;
+  width: 5%;
+}
+
+.mat-column-actions {
+  text-align: center;
+  width: 15%;
+}
