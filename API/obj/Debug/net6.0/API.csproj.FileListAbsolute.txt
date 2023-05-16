@@ -1,0 +1,189 @@
+D:\IGP\igp\API\bin\Debug\net6.0\appsettings.Development.json
+D:\IGP\igp\API\bin\Debug\net6.0\appsettings.json
+D:\IGP\igp\API\bin\Debug\net6.0\API.exe
+D:\IGP\igp\API\bin\Debug\net6.0\API.deps.json
+D:\IGP\igp\API\bin\Debug\net6.0\API.runtimeconfig.json
+D:\IGP\igp\API\bin\Debug\net6.0\API.dll
+D:\IGP\igp\API\bin\Debug\net6.0\API.pdb
+D:\IGP\igp\API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\IGP\igp\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\IGP\igp\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\IGP\igp\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\IGP\igp\API\obj\Debug\net6.0\API.csproj.AssemblyReference.cache
+D:\IGP\igp\API\obj\Debug\net6.0\API.GeneratedMSBuildEditorConfig.editorconfig
+D:\IGP\igp\API\obj\Debug\net6.0\API.AssemblyInfoInputs.cache
+D:\IGP\igp\API\obj\Debug\net6.0\API.AssemblyInfo.cs
+D:\IGP\igp\API\obj\Debug\net6.0\API.csproj.CoreCompileInputs.cache
+D:\IGP\igp\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cs
+D:\IGP\igp\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cache
+D:\IGP\igp\API\obj\Debug\net6.0\staticwebassets.build.json
+D:\IGP\igp\API\obj\Debug\net6.0\staticwebassets.development.json
+D:\IGP\igp\API\obj\Debug\net6.0\scopedcss\bundle\API.styles.css
+D:\IGP\igp\API\obj\Debug\net6.0\API.csproj.CopyComplete
+D:\IGP\igp\API\obj\Debug\net6.0\API.dll
+D:\IGP\igp\API\obj\Debug\net6.0\refint\API.dll
+D:\IGP\igp\API\obj\Debug\net6.0\API.pdb
+D:\IGP\igp\API\obj\Debug\net6.0\API.genruntimeconfig.cache
+D:\IGP\igp\API\obj\Debug\net6.0\ref\API.dll
+D:\IGP\igp\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\IGP\igp\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\IGP\igp\API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\IGP\igp\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\IGP\igp\API\bin\Debug\net6.0\MySqlConnector.dll
+D:\IGP\igp\API\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\IGP\igp\API\bin\Debug\net6.0\AutoMapper.dll
+D:\IGP\igp\API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\IGP\igp\API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\IGP\igp\API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\IGP\igp\API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\IGP\igp\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\IGP\igp\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\IGP\igp\API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\IGP\igp\API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\IGP\igp\api\bin\Debug\net6.0\API.staticwebassets.runtime.json
+D:\IGP\igp\api\bin\Debug\net6.0\libman.json
+D:\IGP\igp\api\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\IGP\igp\api\bin\Debug\net6.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\appsettings.Development.json
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\appsettings.json
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\libman.json
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\API.staticwebassets.runtime.json
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\API.exe
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\API.deps.json
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\API.runtimeconfig.json
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\API.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\API.pdb
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\AutoMapper.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\MySqlConnector.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\bin\Debug\net6.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\obj\Debug\net6.0\API.csproj.AssemblyReference.cache
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\obj\Debug\net6.0\API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\obj\Debug\net6.0\API.AssemblyInfoInputs.cache
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\obj\Debug\net6.0\API.AssemblyInfo.cs
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\obj\Debug\net6.0\API.csproj.CoreCompileInputs.cache
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cs
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cache
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\obj\Debug\net6.0\staticwebassets.build.json
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\obj\Debug\net6.0\staticwebassets.development.json
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\obj\Debug\net6.0\scopedcss\bundle\API.styles.css
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\obj\Debug\net6.0\API.csproj.CopyComplete
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\obj\Debug\net6.0\API.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\obj\Debug\net6.0\refint\API.dll
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\obj\Debug\net6.0\API.pdb
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\obj\Debug\net6.0\API.genruntimeconfig.cache
+D:\Studia\Praca inżynierska\Załączniki\Kod źródłowy aplikacji\Aplikacja serwera\obj\Debug\net6.0\ref\API.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\appsettings.Development.json
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\appsettings.json
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\libman.json
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\API.staticwebassets.runtime.json
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\API.exe
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\API.deps.json
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\API.runtimeconfig.json
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\API.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\API.pdb
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\AutoMapper.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\MySqlConnector.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Poprawiony backend\Aplikacja serwera\bin\Debug\net6.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\Poprawiony backend\Aplikacja serwera\obj\Debug\net6.0\API.csproj.AssemblyReference.cache
+D:\Poprawiony backend\Aplikacja serwera\obj\Debug\net6.0\API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Poprawiony backend\Aplikacja serwera\obj\Debug\net6.0\API.AssemblyInfoInputs.cache
+D:\Poprawiony backend\Aplikacja serwera\obj\Debug\net6.0\API.AssemblyInfo.cs
+D:\Poprawiony backend\Aplikacja serwera\obj\Debug\net6.0\API.csproj.CoreCompileInputs.cache
+D:\Poprawiony backend\Aplikacja serwera\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cs
+D:\Poprawiony backend\Aplikacja serwera\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cache
+D:\Poprawiony backend\Aplikacja serwera\obj\Debug\net6.0\staticwebassets.build.json
+D:\Poprawiony backend\Aplikacja serwera\obj\Debug\net6.0\staticwebassets.development.json
+D:\Poprawiony backend\Aplikacja serwera\obj\Debug\net6.0\scopedcss\bundle\API.styles.css
+D:\Poprawiony backend\Aplikacja serwera\obj\Debug\net6.0\API.csproj.CopyComplete
+D:\Poprawiony backend\Aplikacja serwera\obj\Debug\net6.0\API.dll
+D:\Poprawiony backend\Aplikacja serwera\obj\Debug\net6.0\refint\API.dll
+D:\Poprawiony backend\Aplikacja serwera\obj\Debug\net6.0\API.pdb
+D:\Poprawiony backend\Aplikacja serwera\obj\Debug\net6.0\API.genruntimeconfig.cache
+D:\Poprawiony backend\Aplikacja serwera\obj\Debug\net6.0\ref\API.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\appsettings.Development.json
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\appsettings.json
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\libman.json
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\API.staticwebassets.runtime.json
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\API.exe
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\API.deps.json
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\API.runtimeconfig.json
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\API.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\API.pdb
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\AutoMapper.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\MySqlConnector.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\bin\Debug\net6.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\API.csproj.AssemblyReference.cache
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\API.AssemblyInfoInputs.cache
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\API.AssemblyInfo.cs
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\API.csproj.CoreCompileInputs.cache
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cs
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cache
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\staticwebassets\msbuild.build.API.props
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.API.props
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.API.props
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\staticwebassets.build.json
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\staticwebassets.development.json
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\scopedcss\bundle\API.styles.css
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\API.csproj.CopyComplete
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\API.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\refint\API.dll
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\API.pdb
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\API.genruntimeconfig.cache
+D:\Programowanie\Online-board-game\Online-board-game\API\obj\Debug\net6.0\ref\API.dll

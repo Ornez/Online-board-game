@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Pokoje:</h3>
+<script src="js/signalr/dist/browser/signalr.js"></script>
+<script>
+    //var token = "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzIiwidXNlcm5hbWUiOiJHdWVzdDYzIiwidXNlclJvbGUiOiJHdWVzdCIsIm5iZiI6MTY2OTk5NTE2NCwiZXhwIjoxNjcwNTk5OTY0LCJpYXQiOjE2Njk5OTUxNjR9.Aqfujjo9MNMY3LUU_pwsxEW1nM3Ydh-AgSR9G0Y_p4fFfSZyQ0TaSh3uXvx3PFBFavdWI1TqgsmSiQuwCP_2WQ";
+    var token = ""
+
+    // createLobbyProcess()
+    const createLobbyProcess = () => getToken()
+        .then(() => connectLobbies())
+        .then(() => createLobby({"LobbyName": "Lobby 4", "Password": "1234", "MaxPlayersNumber": 5, "IsPrivate": true}))
+        .then(() => connectLobby())
+        .then(() => setReady({"IsReady": true}))
+
+    // joinLobbyProcess()
+    const joinLobbyProcess = () => getToken()
+        .then(() => connectLobbies())
+        .then(() => joinLobby({"LobbyName": "Lobby 4", "Password": "1234"}))
+        .then(() => connectLobby())
+        .then(() => setReady({"IsReady": true}))
+
+    // startGameProcess()
+    const startGameProcess = () => startGame()
+
+    // openChest()
+    const openChest = () => connectionToGameHub.invoke('OpenChest')
+        .then((message) => {
+            console.log('message:', message)
+        })
+    
+    var routeFieldToPlace
+
+    // getRouteField()
+    const getRouteField = () => connectionToGameHub.invoke('GetRouteField')
+        .then((message) => {
+            console.log('message:', message)
+        })
+
+    // setRouteField({"x": 9, "y": 10})
+    const setRouteField = (request) => connectionToGameHub.invoke('SetRouteField', request)
+        .then((message) => {
+            console.log('message:', message)
+        })
+
+    // placePath()
+    const placePath = () => getRouteField()
+        .then(() => setRouteField({"x": 9, "y": 10}))
+        .then(() => getRouteField())
+        .then(() => setRouteField({"x": 8, "y": 10}))
+        .then(() => getRouteField())
+        .then(() => setRouteField({"x": 7, "y": 10}))
+
+    // move({"x": 7, "y": 10})
+    const move = (request) => connectionToGameHub.invoke('Move', request)
+        .then((message) => {
+            console.log('message:', message)
+        })
+
+    // getPlacementLocations()
+    const getPlacementLocations = () => connectionToGameHub.invoke('GetRouteField')
+        .then((message) => {
+            console.log('message:', message)
+        })
+
+    // getPositionsToMove()
+    const getPositionsToMove = () => connectionToGameHub.invoke('getPositionsToMove')
+        .then((message) => {
+            console.log('message:', message)
+        })
+    
+    // rollTheDice()
+    const rollTheDice = () => connectionToGameHub.invoke('rollTheDice')
+        .then((message) => {
+            console.log('message:', message)
+        })
+
+    // calculateFight({ "damageScrollsUsed": 2 })
+    const calculateFight = (request) => connectionToGameHub.invoke('calculateFight', request)
+        .then((message) => {
+            console.log('message:', message)
+        })
+
+    // startFight({ "damageScrollsUsed": 2 })
+    const startFight = (request) => connectionToGameHub.invoke('startFight', request)
+        .then((message) => {
+            console.log('message:', message)
+        })
+    
+    
+    const getToken = () => fetch('api/Token/getToken', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            "Authorization": "Bearer " + token
+        },
+    })
+        .then(response => response.json())
+        .then(response => {
+            token = response.token;
+            console.log("Token: " + token);
+        })
+
+    let connectionToLobbiesHub = new signalR.HubConnectionBuilder()
+        .withUrl("/lobbies", {
+            accessTokenFactory: () => token,
+            skipNegotiation: true,
+            transport: signalR.HttpTransportType.WebSockets
+        })
+        .build();
+
+    let connectionToLobbyHub = new signalR.HubConnectionBuilder()
+        .withUrl("/lobby", {
+            accessTokenFactory: () => token,
+            skipNegotiation: true,
+            transport: signalR.HttpTransportType.WebSockets
+        })
+        .build();
+
+    let connectionToChatHub = new signalR.HubConnectionBuilder()
+        .withUrl("/chat", {
+            accessTokenFactory: () => token,
+            skipNegotiation: true,
+            transport: signalR.HttpTransportType.WebSockets
+        })
+        .build();
+
+    let connectionToGameHub = new signalR.HubConnectionBuilder()
+        .withUrl("/game", {
+            accessTokenFactory: () => token,
+            skipNegotiation: true,
+            transport: signalR.HttpTransportType.WebSockets
+        })
+        .build();
+
+    const connectGame = () => connectionToGameHub.start()
+        .then(() => {
+            connectionToGameHub.on('players_selected', m => console.log(m))
+            connectionToGameHub.on('route_field_selected', m => console.log(m))
+            connectionToGameHub.on('route_field_placed', m => console.log(m))
+            connectionToGameHub.on('player_moved', m => console.log(m))
+            connectionToGameHub.on('round_started', m => console.log(m))
+            connectionToGameHub.on('enemy_spawned', m => console.log(m))
+            connectionToGameHub.on('fight_started', m => console.log(m))
+            connectionToGameHub.on('dice_rolled', m => console.log(m))
+            connectionToGameHub.on('fight_over', m => console.log(m))
+            connectionToGameHub.on('player_updated', m => console.log(m))
+        })
+
+    // connectLobbies()
+    const connectLobbies = () => connectionToLobbiesHub.start()
+        .then(() => {
+            connectionToLobbiesHub.on('update_lobby', m => console.log(m))
+            connectionToLobbiesHub.on('create_lobby', m => console.log(m))
+            connectionToLobbiesHub.on('delete_lobby', m => console.log(m))
+        })
+
+    // disconnectLobbies()
+    const disconnectLobbies = () => connectionToLobbiesHub.stop()
+        .then(() => {
+            connectionToLobbiesHub.off('update_lobby', m => console.log(m))
+            connectionToLobbiesHub.off('create_lobby', m => console.log(m))
+            connectionToLobbiesHub.off('delete_lobby', m => console.log(m))
+        })
+
+    // connectLobby()
+    const connectLobby = () => connectionToLobbyHub.start()
+        .then(() => {
+            connectionToLobbyHub.on('player_changed_readiness', m => console.log(m))
+            connectionToLobbyHub.on('player_joined', m => console.log(m))
+            connectionToLobbyHub.on('player_left', m => console.log(m))
+            connectionToLobbyHub.on('game_started', m => onGameStarted(m))
+            connectionToLobbyHub.on('player_kicked', m => console.log(m))
+        })
+        .then(() => connectionToChatHub.start())
+        .then(() => {
+            connectionToChatHub.on('message_sent', m => console.log(m))
+        })
+
+    const onGameStarted = (m) => {
+        console.log("GAME STARTED: " + m)
+        connectGame()
+    }
+
+    // disconnectLobby()
+    const disconnectLobby = () => connectionToLobbyHub.stop()
+        .then(() => {
+            connectionToLobbyHub.off('player_changed_readiness', m => console.log(m))
+            connectionToLobbyHub.off('player_joined', m => console.log(m))
+            connectionToLobbyHub.off('player_left', m => console.log(m))
+            connectionToLobbyHub.off('game_started', m => onGameStarted(m))
+            connectionToLobbyHub.off('player_kicked', m => console.log(m))
+        })
+        .then(() => connectionToChatHub.stop())
+        .then(() => {
+            connectionToChatHub.off('message_sent', m => console.log(m))
+        })
+
+    //createLobby({"LobbyName": "Lobby 1", "Password": "1234", "MaxPlayersNumber": 5, "IsPrivate": true})
+    const createLobby = (request) => connectionToLobbiesHub.invoke('CreateLobby', request)
+        .then((message) => {
+            console.log('message:', message)
+            connectionToLobbiesHub.off('update_lobby', m => console.log(m))
+            connectionToLobbiesHub.off('create_lobby', m => console.log(m))
+            connectionToLobbiesHub.off('delete_lobby', m => console.log(m))
+        })
+
+    // displayLobbies()
+    const displayLobbies = () => connectionToLobbiesHub.invoke("DisplayLobbies")
+        .then((lobbies) => {
+            console.log('lobbies:', lobbies)
+        })
+
+    // joinLobby({"LobbyName": "Lobby 1", "Password": "1234"})
+    const joinLobby = (request) => connectionToLobbiesHub.invoke('JoinLobby', request)
+        .then((message) => {
+            console.log('message:', message)
+            connectionToLobbiesHub.off('update_lobby', m => console.log(m))
+            connectionToLobbiesHub.off('create_lobby', m => console.log(m))
+            connectionToLobbiesHub.off('delete_lobby', m => console.log(m))
+
+        })
+
+    // leaveLobby({"LobbyId": 3})
+    const leaveLobby = (request) => connectionToLobbyHub.invoke('LeaveLobby', request)
+        .then((message) => {
+            console.log('message:', message)
+            connectionToLobbiesHub.on('update_lobby', m => console.log(m))
+            connectionToLobbiesHub.on('create_lobby', m => console.log(m))
+            connectionToLobbiesHub.on('delete_lobby', m => console.log(m))
+        })
+
+    // setReady({"IsReady": true})
+    const setReady = (request) => connectionToLobbyHub.invoke('SetReady', request)
+        .then((message) => {
+            console.log('message:', message)
+        })
+
+    // displayPlayers()
+    const displayPlayers = () => connectionToLobbyHub.invoke('DisplayPlayers')
+        .then((message) => {
+            console.log('message:', message)
+        })
+
+    // kickPlayer({"Id": 1, "Username": "1234", "Role": "Guest"})
+    const kickPlayer = (request) => connectionToLobbyHub.invoke('KickPlayer', request)
+        .then((message) => {
+            console.log('message:', message)
+        })
+
+    const startGame = () => connectionToLobbyHub.invoke('StartTheGame')
+        .then((message) => {
+            console.log('message:', message)
+        })
+
+
+    const loginAsPlayer = () => fetch('api/Account/login', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            "Authorization": "Bearer " + token
+        },
+        body: JSON.stringify({"username": '12341234', 'password': '12341234'})
+    })
+        .then(response => response.json())
+        .then(response => {
+            token = response.token;
+            console.log("Token: " + token);
+        })
+
+    const loginAsGuest = () => fetch('api/Account/loginGuest', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            "Authorization": "Bearer " + token
+        },
+    })
+        .then(response => response.json())
+        .then(response => {
+            token = response.token;
+            console.log("Token: " + token);
+        })
+
+</script>
+
+</body>
+</html>

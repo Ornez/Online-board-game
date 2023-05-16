@@ -1,0 +1,38 @@
+namespace API.Modules.Game.Keys;
+public class ReturnMessageType
+{
+    public class Lobby 
+    {
+        public const string GAME_STARTED = "GAME_STARTED";     
+        public const string PLAYERS_NOT_READY = "PLAYERS_NOT_READY"; 
+        public const string ONLY_OWNER_CAN_KICK_PLAYERS = "ONLY_OWNER_CAN_KICK_PLAYERS";
+        public const string PLAYER_KICKED_SUCCESSFULLY = "PLAYER_KICKED_SUCCESSFULLY";
+    }
+
+    public static string JOIN_LOBBY_WRONG_PASSWORD = "JOIN_LOBBY_WRONG_PASSWORD";
+    public static string JOIN_LOBBY_NO_SLOTS = "JOIN_LOBBY_NO_SLOTS";
+    public static string JOIN_LOBBY_WRONG_NAME = "JOIN_LOBBY_WRONG_NAME";
+    public static string JOIN_LOBBY_SUCCESSFULLY = "JOIN_LOBBY_SUCCESSFULLY";
+    public static string JOIN_LOBBY_PLAYER_ALREADY_IN_LOBBY = "JOIN_LOBBY_PLAYER_ALREADY_IN_LOBBY";
+
+    public static string LEAVE_LOBBY_SUCCESSFULLY = "LEAVE_LOBBY_SUCCESSFULLY";
+
+    public static string CREATE_LOBBY_SUCCESSFULLY = "CREATE_LOBBY_SUCCESSFULLY";
+    public static string CREATE_LOBBY_NAME_IN_USE = "CREATE_LOBBY_NAME_IN_USE";
+    public static string CREATE_LOBBY_NAME_CANNOT_BE_EMPTY = "CREATE_LOBBY_NAME_CANNOT_BE_EMPTY";
+
+    public static string LOBBY_NAME_IN_USE = "LOBBY_NAME_IN_USE";
+    public static string LOBBY_WITH_THIS_NAME_DOESNT_EXISTS = "LOBBY_WITH_THIS_NAME_DOESNT_EXISTS";
+    public static string LOBBY_WITH_THIS_ID_DOESNT_EXISTS = "LOBBY_WITH_THIS_ID_DOESNT_EXISTS";
+
+    public static string PLAYER_REMOVED_FROM_REGISTRY = "PLAYER_REMOVED_FROM_REGISTRY";
+    public static string PLAYER_ADDED_TO_REGISTRY = "PLAYER_ADDED_TO_REGISTRY";
+    public static string PLAYER_ALREADY_IN_REGISTRY = "PLAYER_ALREADY_IN_REGISTRY";
+
+    public static string PLAYER_JOINED_LOBBIES_GROUP = "PLAYER_JOINED_LOBBIES_GROUP";
+    public static string PLAYER_LEFT_LOBBIES_GROUP = "PLAYER_LEFT_LOBBIES_GROUP";
+
+    public static string NO_LOBBY_WITH_THIS_PLAYER_ID = "NO_LOBBY_WITH_THIS_PLAYER_ID";
+    public static string USER_CHANGED_READINESS = "USER_CHANGED_READINESS";
+    public static string USER_WITH_THIS_ID_NOT_FOUND = "USER_WITH_THIS_ID_NOT_FOUND";
+}
