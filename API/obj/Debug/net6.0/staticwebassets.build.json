@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6QqRb/WMUJn71+HwZGrJB43ZGiMm3S2e2/dvLtGJ2Gc=",
+  "Hash": "o0uWqTW94FYwDfjMefptqVkqMMqcFE3b8Cu6y3UVI4g=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\112.dba481dd0aacdd9a.js",
+      "Identity": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\112.a6ac4a29438691f4.js",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "112.dba481dd0aacdd9a.js",
+      "RelativePath": "112.a6ac4a29438691f4.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,7 +31,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\112.dba481dd0aacdd9a.js"
+      "OriginalItemSpec": "wwwroot\\112.a6ac4a29438691f4.js"
     },
     {
       "Identity": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\3rdpartylicenses.txt",
@@ -51,12 +51,12 @@
       "OriginalItemSpec": "wwwroot\\3rdpartylicenses.txt"
     },
     {
-      "Identity": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\44.64591111e205e370.js",
+      "Identity": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\44.d7895a96039ecc91.js",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "44.64591111e205e370.js",
+      "RelativePath": "44.d7895a96039ecc91.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,7 +65,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\44.64591111e205e370.js"
+      "OriginalItemSpec": "wwwroot\\44.d7895a96039ecc91.js"
     },
     {
       "Identity": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\assets\\fonts\\Gameria.ttf",
@@ -1411,12 +1411,12 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\main.8e257122802db4d9.js",
+      "Identity": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\main.6cfc01973c3b3f95.js",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "main.8e257122802db4d9.js",
+      "RelativePath": "main.6cfc01973c3b3f95.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1425,7 +1425,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\main.8e257122802db4d9.js"
+      "OriginalItemSpec": "wwwroot\\main.6cfc01973c3b3f95.js"
     },
     {
       "Identity": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\polyfills.800330198719c5cf.js",
@@ -1530,12 +1530,12 @@
       "OriginalItemSpec": "wwwroot\\primeicons.ffecb2549ad1765a.eot"
     },
     {
-      "Identity": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\runtime.b3ba3b56b8af4346.js",
+      "Identity": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\runtime.7eb4fd3c53ed5f24.js",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "runtime.b3ba3b56b8af4346.js",
+      "RelativePath": "runtime.7eb4fd3c53ed5f24.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1544,7 +1544,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\runtime.b3ba3b56b8af4346.js"
+      "OriginalItemSpec": "wwwroot\\runtime.7eb4fd3c53ed5f24.js"
     },
     {
       "Identity": "D:\\Programowanie\\Online-board-game\\Online-board-game\\API\\wwwroot\\SigmarOne.9129e8e485bbee00.ttf",

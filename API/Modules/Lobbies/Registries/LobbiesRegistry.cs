@@ -206,9 +206,14 @@ public class LobbiesRegistry : ILobbiesRegistry
         }
         var itemToRemove = lobbyData.Players.Find(x => x.Id == playerData.Id && x.Role == playerData.Role);
         int indexToRemove = lobbyData.Players.IndexOf(itemToRemove);
-        lobbyData.Players.RemoveAt(indexToRemove);
-        lobbyData.PlayersReady.RemoveAt(indexToRemove);
-
+        
+        //TODO: Think about better aproach
+        if (indexToRemove != -1)
+        {
+            lobbyData.Players.RemoveAt(indexToRemove);
+            lobbyData.PlayersReady.RemoveAt(indexToRemove);
+        }
+        
         if (lobbyData.Players.Count == 0) {
             var lobbyToRemove = lobbies.Find(x => x.Id == lobbyData.Id);
             lobbies.Remove(lobbyToRemove);
